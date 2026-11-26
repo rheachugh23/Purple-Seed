@@ -1,14 +1,14 @@
 # SPEC: Last day of term (Collection Pot, teacher gifts Reel)
 
-GOAL:    The viewer feels how much one Pot from the whole class means to a teacher, then sees how simple it was to make, and taps CREATE A POT.
+GOAL:    The viewer feels how much one Pot from the whole class means to a teacher, sees how simple it was to make, leaves with the campaign line "Teacher's gift made easy" (shared with the emailer), and taps CREATE A POT.
 OUTPUT:  HyperFrames, 1080 x 1920, 30 fps, Instagram Reels
-TIME:    29.5 s x 30 = 885 frames. Bed ~96 bpm (1 beat = 18.75 frames); the cut to Gold lands on a downbeat.
+TIME:    30 s x 30 = 900 frames. Bed ~96 bpm (1 beat = 18.75 frames); the cut to Gold lands on a downbeat.
 TERRITORY: 2. Gifting is better when done together
 
 LOOK:
 - Two worlds, one cut between them at 12.5 s:
   1. The receiver's world (0–12.5 s): live-action Higgsfield plates. A real UK classroom at 3:30pm in December, low winter sun from the left, warm 3200K practicals (fairy lights), shallow depth of field. No faces: hands at most.
-  2. Chip's world (12.5–29.5 s): flat brand fields, never all-Gold. Each frame mixes Wedding White #FFFCF8, Pot of Gold #F9B910 and at most one Work Bash Black #2F2F32 shape, divided by big crops of the real Pot shape (`assets/pot/pot.svg`, the site's potYellow.svg, recoloured, never redrawn).
+  2. Chip's world (12.5–30 s): flat brand fields, never all-Gold. Each frame mixes Wedding White #FFFCF8, Pot of Gold #F9B910 and at most one Work Bash Black #2F2F32 shape, divided by big crops of the real Pot shape (`assets/pot/pot.svg`, the site's potYellow.svg, recoloured, never redrawn).
      - F5: White with a Gold crop.
      - F6: Gold with a White crop.
      - F7: White with a Black Pot.
@@ -52,8 +52,8 @@ SHOTS:
 | F5 | 12.5–17.0 | The Gold Pot crop rises; Chip (121 + hat) pops in; the baubles swing in from the top; the NEW sticker slaps on at 13.4 s | "Now the gift's sorted too." (12.7–17.0), "A shop they love, or a multi-store card." (13.6–17.0) | Full bed; a pop on Chip; a sticker slap | Chip exits left as the next one enters |
 | F6 | 17.0–20.0 | The phone slides up; Pot shapes fly in from the edges and land on it | "One Pot. One link." (17.2–20.0), "Everyone chips in." (17.8–20.0) | Soft pops as the Pots land | The last Pot falls into the next frame as the card's drop |
 | F7 | 20.0–24.0 | The printed card drops onto the Black Pot and settles at -8°; the emailer's QR-card Chip slides in | "No trip to the shops." (20.2–24.0), "Print it at home, or we'll post it to your door." (21.0–24.0) | Paper slap on landing | The card slides off; the end card builds |
-| F8 | 24.0–27.0 | The snowy hill rises; the emailer's tree-and-presents Chip slides in; the headline rises line by line | "A card and gift in one, from everyone." (24.2–27.0) | The riser starts | The headline clears upwards; Chip rises and shrinks to his F9 spot |
-| F9 | 27.0–29.5 | The hill rises again; Chip swaps to 139 + hat (wink); the Pot pops into the logo's O at 27.3 s, then the letters reveal; CREATE A POT lands at 27.8 s | Logo (27.3–29.5), CREATE A POT (27.8–29.5) | A soft hit on the logo; the bed resolves on the last bar | End (hold 1.7 s) |
+| F8 | 24.0–27.5 | The snowy hill rises; the emailer's tree-and-presents Chip slides in; the campaign line rises line by line | "Teacher's gift made easy." (24.2–27.5), "A card and gift in one, from everyone." (24.9–27.5) | The riser starts | The headline clears upwards; Chip rises and shrinks to his F9 spot |
+| F9 | 27.5–30.0 | The hill rises again; Chip swaps to 139 + hat (wink); the Pot pops into the logo's O at 27.8 s, then the letters reveal; CREATE A POT lands at 28.3 s | Logo (27.8–30.0), CREATE A POT (28.3–30.0) | A soft hit on the logo; the bed resolves on the last bar | End (hold 1.7 s) |
 
 BANNED:
 - The defaults: a dark void, glow or particles, purple or blue gradients, cream paper with a serif, everything fading in together, text drifting after it lands, corner labels, three cards in a row, the logo docked in a corner.

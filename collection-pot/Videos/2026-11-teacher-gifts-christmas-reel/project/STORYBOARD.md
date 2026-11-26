@@ -1,6 +1,6 @@
 ---
 format: 1080x1920
-duration: 29.5s
+duration: 30s
 message: "One Pot from the whole class: impossible to forget for the teacher, simple for the parents"
 arc: The teacher's moment → How it was made → Sign-off
 audience: UK parents organising a class Christmas gift for a teacher (Instagram Reels)
@@ -113,32 +113,32 @@ The hook. Frame 0 already carries the title and the room.
 - sound: a paper slap on landing
 - chip: Christmas emailer image, reading QR card (cut out)
 
-## Frame 8: A card and gift in one (24-27s)
+## Frame 8: Teacher's gift made easy (24-27.5s)
 
 - act: Act 3: Sign-off
 - scene: Gold with Pot snow and a White Pot turned over as a snowy hill; the emailer's Chip in a Santa hat and scarf with a tree and presents
-- duration: 3s
+- duration: 3.5s
 - poster: 26
 - transition_in: cut
 - status: built
 - src: compositions/f8-endcard.html
 - vo:
-- on_screen: "A card and gift in one, from everyone."
-- reads: "A card and gift in one, from everyone." (24.2-27s)
+- on_screen: "Teacher's gift made easy." (the campaign line, as in the emailer) · "A card and gift in one, from everyone."
+- reads: "Teacher's gift made easy." (24.2-27.5s); subline (24.9-27.5s)
 - sound: the riser starts
 - chip: Christmas emailer image, tree and presents (cut out)
 
-## Frame 9: The mark (27-29.5s)
+## Frame 9: The mark (27.5-30s)
 
 - act: Act 3: Sign-off
 - scene: The headline clears and the snowy hill rises; Chip waves with a wink (139 + Santa hat layer); the Pot pops into the logo's O, the letters reveal, and CREATE A POT lands
 - duration: 2.5s
-- poster: 28.5
+- poster: 29
 - transition_in: none (same composition)
 - status: built
 - src: compositions/f8-endcard.html
 - vo:
 - on_screen: Collection Pot logo · "CREATE A POT"
-- reads: logo (27.3-29.5s); CREATE A POT (27.8-29.5s)
+- reads: logo (27.8-30s); CREATE A POT (28.3-30s)
 - sound: a soft hit on the logo; the bed resolves on the last bar
 - chip: 139 - Wink left + Santa hat

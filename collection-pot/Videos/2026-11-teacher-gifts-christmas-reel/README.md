@@ -5,7 +5,8 @@
 | **Brief** | Turn the "Teacher gifts made effortless" emailer into an Instagram Reel for Christmas class gifting. |
 | **Source** | `source-email.md` (the email's copy, verbatim) |
 | **Channel** | Instagram Reels |
-| **Format** | 1080×1920, 30 fps, 25 to 30 s, music and sound effects, no voiceover |
+| **Format** | 1080×1920, 30 fps, 30 s, music and sound effects, no voiceover |
+| **Campaign line** | Teacher's gift made easy (in sync with the emailer) |
 | **Tools** | Higgsfield (live-action plates, no faces) + HyperFrames (type, Chip, logo, edit, render) |
 | **Chip** | 3D only (no 2D Chip): renders 121 With gift and 139 Wink left, each with a Santa-hat layer (hat lifted from render 108), plus the two Christmas emailer images (cut out) |
 | **Territory** | 2. Gifting is better when done together |

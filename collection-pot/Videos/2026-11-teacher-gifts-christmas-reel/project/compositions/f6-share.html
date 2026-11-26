@@ -14,28 +14,79 @@
       inset: 0;
       overflow: hidden;
       background: #f9b910;
-      color: #2f2f32;
     }
-    .title {
+    .pot {
+      position: absolute;
+      -webkit-mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+      mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+    }
+    .pot-line {
+      position: absolute;
+      overflow: visible;
+    }
+    .string {
+      position: absolute;
+      width: 3px;
+      background: rgba(47, 47, 50, 0.55);
+    }
+    .cap {
+      position: absolute;
+      border-radius: 6px 6px 3px 3px;
+      background: #c9c3b6;
+    }
+    .h {
       position: absolute;
       left: 120px;
-      width: 800px;
+      width: 820px;
       font-family: "Faro Display Lucky", sans-serif;
-      font-size: 116px;
       line-height: 1;
       letter-spacing: -0.01em;
       color: #2f2f32;
+      margin: 0;
+      font-weight: 400;
+    }
+    .standfirst {
+      position: absolute;
+      left: 120px;
+      width: 820px;
+      font-family: "Faro Display Lucky", sans-serif;
+      line-height: 1.02;
+      letter-spacing: -0.01em;
+      color: #2f2f32;
+      margin: 0;
+    }
+    .xw {
+      display: inline-block;
+      white-space: nowrap;
+    }
+    .xw > span {
+      display: inline-block;
+      transform-origin: 50% 85%;
+      margin-right: -0.035em;
+    }
+    .dot {
+      display: inline-block;
+      width: 0.23em;
+      height: 0.24em;
+      margin-left: 0.04em;
+      background: currentColor;
+      -webkit-mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+      mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+    }
+    .dot.gold {
+      background: #f9b910;
     }
     .sub {
       position: absolute;
       left: 120px;
-      width: 760px;
+      width: 780px;
       font-family: "Inter", sans-serif;
       font-weight: 600;
-      font-size: 44px;
+      font-size: 42px;
       line-height: 1.15;
       letter-spacing: -0.025em;
       color: #2f2f32;
+      margin: 0;
     }
     .pill {
       position: absolute;
@@ -51,22 +102,50 @@
       text-transform: uppercase;
       white-space: nowrap;
     }
-    .shadow {
-      position: absolute;
-      border-radius: 50%;
-      background: rgba(10, 10, 10, 0.18);
-      filter: blur(18px);
-    }
     .chip {
       position: absolute;
     }
-
+    .shadow {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(10, 10, 10, 0.16);
+      filter: blur(16px);
+    }
+    .phone {
+      position: absolute;
+      border: 14px solid #141416;
+      border-radius: 56px;
+      overflow: hidden;
+      background: #141416;
+      box-shadow: 0 22px 44px rgba(10, 10, 10, 0.25);
+    }
+    .phone img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 42px;
+      display: block;
+    }
   </style>
   <div id="root" data-composition-id="f6" data-width="1080" data-height="1920">
-    <h1 id="f6-title" class="title clip" data-start="0" data-duration="3" style="top:300px">One Pot.<br />One link.</h1>
+    <div id="f6-bg" class="pot" data-layout-ignore style="left:-380px; top:-880px; width:1520px; height:1581px; background:#fffcf8; transform:rotate(-10deg);"></div>
+    <div id="f6-snow-0" class="pot" data-layout-ignore style="left:900px; top:150px; width:30px; height:31px; background:#fffcf8; transform:rotate(10deg);"></div>
+<div id="f6-snow-1" class="pot" data-layout-ignore style="left:1000px; top:330px; width:22px; height:23px; background:#fffcf8; transform:rotate(-14deg);"></div>
+<div id="f6-snow-2" class="pot" data-layout-ignore style="left:960px; top:560px; width:26px; height:27px; background:#fffcf8; transform:rotate(20deg);"></div>
+<div id="f6-snow-3" class="pot" data-layout-ignore style="left:60px; top:1720px; width:30px; height:31px; background:#fffcf8; transform:rotate(14deg);"></div>
+<div id="f6-snow-4" class="pot" data-layout-ignore style="left:1000px; top:1760px; width:24px; height:25px; background:#fffcf8; transform:rotate(-8deg);"></div>
+    <div id="f6-t1" class="pot" data-layout-ignore style="left:190px; top:880px; width:120px; height:125px; background:#fffcf8; transform:rotate(-15deg);"></div>
+    <div id="f6-t2" class="pot" data-layout-ignore style="left:880px; top:820px; width:92px; height:96px; background:#2f2f32; transform:rotate(20deg);"></div>
+    <svg id="f6-t3" class="pot-line" data-layout-ignore viewBox="0 0 50 52" style="left:140px; top:1180px; width:104px; height:108px; transform:rotate(10deg)"><path d="M33.4026 0H15.7481C12.1464 0 11.7026 1.20578 10.7315 3.11657C10.2363 4.24328 1.35433 21.4404 0.550385 23.114C0.0230001 24.0958 -0.0155893 25.2093 0.00370528 26.3031C0.331713 43.5925 12.4423 52 24.5593 52H24.5914C36.7084 52 48.8254 43.5925 49.147 26.3031C49.1663 25.2093 49.1277 24.0892 48.6003 23.114C47.7964 21.4339 38.9209 4.23669 38.4192 3.11657C37.4416 1.19919 36.9978 0 33.4026 0Z" fill="none" stroke="#fffcf8" stroke-width="4" vector-effect="non-scaling-stroke"/></svg>
+    <div id="f6-t4" class="pot" data-layout-ignore style="left:905px; top:1120px; width:80px; height:83px; background:#fffcf8; transform:rotate(-8deg);"></div>
+    <svg id="f6-t5" class="pot-line" data-layout-ignore viewBox="0 0 50 52" style="left:230px; top:1490px; width:86px; height:89px; transform:rotate(-22deg)"><path d="M33.4026 0H15.7481C12.1464 0 11.7026 1.20578 10.7315 3.11657C10.2363 4.24328 1.35433 21.4404 0.550385 23.114C0.0230001 24.0958 -0.0155893 25.2093 0.00370528 26.3031C0.331713 43.5925 12.4423 52 24.5593 52H24.5914C36.7084 52 48.8254 43.5925 49.147 26.3031C49.1663 25.2093 49.1277 24.0892 48.6003 23.114C47.7964 21.4339 38.9209 4.23669 38.4192 3.11657C37.4416 1.19919 36.9978 0 33.4026 0Z" fill="none" stroke="#2f2f32" stroke-width="4" vector-effect="non-scaling-stroke"/></svg>
+    <div id="f6-t6" class="pot" data-layout-ignore style="left:870px; top:1450px; width:112px; height:116px; background:#fffcf8; transform:rotate(12deg);"></div>
+    <div id="f6-phone" class="phone clip" data-start="0" data-duration="3" style="left:350px; top:730px; width:420px; height:826px; transform:rotate(7deg)">
+      <img id="f6-screen" src="assets/screens/teacher-pot-add.png" alt="The Teacher Pot with its ADD TO THIS POT button" />
+    </div>
+    <h1 id="f6-h" class="h clip" data-start="0" data-duration="3" style="top:300px; font-size:120px">One Pot<span class="dot gold"></span><br />One link<span class="dot gold"></span></h1>
     <p id="f6-sub" class="sub clip" data-start="0" data-duration="3" style="top:560px">Everyone chips in.</p>
-    <div id="f6-shadow" class="shadow clip" data-start="0" data-duration="3" style="left:250px; top:1640px; width:420px; height:60px" data-layout-ignore></div>
-    <img id="f6-chip" class="chip clip" data-start="0" data-duration="3" src="assets/chip/24-share-a-pot-2.png" alt="Chip sending the Pot link" style="left:60px; top:680px; width:1000px; height:1000px" data-layout-ignore />
   </div>
   <script>
     window.__timelines = window.__timelines || {};

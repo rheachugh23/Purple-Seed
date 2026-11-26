@@ -67,6 +67,37 @@
       font-size: 26px;
       line-height: 1.25;
     }
+    .dot {
+      display: inline-block;
+      width: 0.23em;
+      height: 0.24em;
+      margin-left: 0.04em;
+      background: #f9b910;
+      -webkit-mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+      mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+    }
+    .xw {
+      display: inline-block;
+      white-space: nowrap;
+    }
+    .xw > span {
+      display: inline-block;
+      transform-origin: 50% 85%;
+      margin-right: -0.035em;
+    }
+    .standfirst {
+      position: absolute;
+      left: 120px;
+      top: 300px;
+      width: 820px;
+      font-family: "Faro Display Lucky", sans-serif;
+      font-size: 66px;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      color: #fffcf8;
+      text-shadow: 0 6px 28px rgba(0, 0, 0, 0.35);
+      margin: 0;
+    }
     #f3-plate-wrap {
       position: absolute;
       inset: 0;
@@ -75,23 +106,38 @@
     }
     .msg {
       position: absolute;
-      width: 760px;
-      padding: 30px 36px 32px;
-      border-radius: 32px;
-      background: #fffcf8;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      max-width: 800px;
+      padding: 16px 30px 16px 16px;
+      border-radius: 40px;
       color: #2f2f32;
-      box-shadow: 0 14px 34px rgba(10, 10, 10, 0.22);
+      box-shadow: 0 12px 30px rgba(10, 10, 10, 0.22);
       font-family: "Inter", sans-serif;
+    }
+    .msg .av {
+      flex: none;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: #2f2f32;
+      color: #fffcf8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 28px;
     }
     .msg .who {
       font-weight: 600;
-      font-size: 32px;
+      font-size: 28px;
       letter-spacing: -0.01em;
-      margin-bottom: 10px;
+      margin-bottom: 2px;
     }
     .msg .say {
       font-weight: 400;
-      font-size: 38px;
+      font-size: 32px;
       line-height: 1.2;
       letter-spacing: -0.02em;
     }
@@ -149,20 +195,28 @@
       <img id="f3-screen" src="assets/screens/teacher-pot-screen.png" alt="" />
     </div>
     </div>
-    <h1 id="f3-title" class="title clip" data-start="0" data-duration="4.5">Every name.<br />Every message.</h1>
-    <div id="f3-msg1" class="msg clip" data-start="0" data-duration="4.5" style="left:110px; top:560px; transform:rotate(-2deg)">
-      <div class="who">Aisha</div>
-      <div class="say">Thank you for everything you’ve done for us this year 😊</div>
+    <h1 id="f3-title" class="title clip" data-start="0" data-duration="4.5">Every name<span class="dot gold"></span><br />Every message<span class="dot gold"></span></h1>
+    <div id="f3-msg1" class="msg clip" data-start="0" data-duration="4.5" style="left:110px; top:572px; background:#f0abd1; transform:rotate(-2deg)">
+      <span class="av">A</span>
+      <div><div class="who">Aisha</div><div class="say">Thank you for everything you’ve done for us this year 😊</div></div>
     </div>
-    <div id="f3-msg2" class="msg clip" data-start="0" data-duration="4.5" style="left:210px; top:770px; transform:rotate(1.5deg)">
-      <div class="who">Daniel</div>
-      <div class="say">Thank you for being such an inspiring teacher.</div>
+    <div id="f3-msg2" class="msg clip" data-start="0" data-duration="4.5" style="left:330px; top:726px; background:#fffcf8; transform:rotate(2deg)">
+      <span class="av">L</span>
+      <div><div class="who">Leo</div><div class="say">Best teacher ever! 🌟</div></div>
     </div>
-    <div id="f3-msg3" class="msg clip" data-start="0" data-duration="4.5" style="left:130px; top:980px; transform:rotate(-1deg)">
-      <div class="who">Sofia</div>
-      <div class="say">Your guidance and kindness mean so much 💛</div>
+    <div id="f3-msg3" class="msg clip" data-start="0" data-duration="4.5" style="left:130px; top:846px; background:#78dec2; transform:rotate(-1deg)">
+      <span class="av">D</span>
+      <div><div class="who">Daniel</div><div class="say">Thank you for being such an inspiring teacher.</div></div>
     </div>
-    <div id="f3-tag" class="sketch-tag clip" data-start="0" data-duration="4.5" data-layout-ignore>SKETCH · Higgsfield plate 2, softened<br />Message cards are real demo Pot messages</div>
+    <div id="f3-msg4" class="msg clip" data-start="0" data-duration="4.5" style="left:400px; top:1002px; background:#d9a582; transform:rotate(2.5deg)">
+      <span class="av">M</span>
+      <div><div class="who">Maya</div><div class="say">Merry Christmas! 🎄</div></div>
+    </div>
+    <div id="f3-msg5" class="msg clip" data-start="0" data-duration="4.5" style="left:170px; top:1118px; background:#b5fa80; transform:rotate(-1.5deg)">
+      <span class="av">S</span>
+      <div><div class="who">Sofia</div><div class="say">Have a lovely break! 💛</div></div>
+    </div>
+    <div id="f3-tag" class="sketch-tag clip" data-start="0" data-duration="4.5" data-layout-ignore>SKETCH · Higgsfield plate 2, softened<br />Messages: demo Pot + the emailer card</div>
   </div>
   <script>
     window.__timelines = window.__timelines || {};

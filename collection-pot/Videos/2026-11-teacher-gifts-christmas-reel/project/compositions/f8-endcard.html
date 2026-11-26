@@ -14,28 +14,79 @@
       inset: 0;
       overflow: hidden;
       background: #f9b910;
-      color: #2f2f32;
     }
-    .title {
+    .pot {
+      position: absolute;
+      -webkit-mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+      mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+    }
+    .pot-line {
+      position: absolute;
+      overflow: visible;
+    }
+    .string {
+      position: absolute;
+      width: 3px;
+      background: rgba(47, 47, 50, 0.55);
+    }
+    .cap {
+      position: absolute;
+      border-radius: 6px 6px 3px 3px;
+      background: #c9c3b6;
+    }
+    .h {
       position: absolute;
       left: 120px;
-      width: 800px;
+      width: 820px;
       font-family: "Faro Display Lucky", sans-serif;
-      font-size: 116px;
       line-height: 1;
       letter-spacing: -0.01em;
       color: #2f2f32;
+      margin: 0;
+      font-weight: 400;
+    }
+    .standfirst {
+      position: absolute;
+      left: 120px;
+      width: 820px;
+      font-family: "Faro Display Lucky", sans-serif;
+      line-height: 1.02;
+      letter-spacing: -0.01em;
+      color: #2f2f32;
+      margin: 0;
+    }
+    .xw {
+      display: inline-block;
+      white-space: nowrap;
+    }
+    .xw > span {
+      display: inline-block;
+      transform-origin: 50% 85%;
+      margin-right: -0.035em;
+    }
+    .dot {
+      display: inline-block;
+      width: 0.23em;
+      height: 0.24em;
+      margin-left: 0.04em;
+      background: currentColor;
+      -webkit-mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+      mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+    }
+    .dot.gold {
+      background: #f9b910;
     }
     .sub {
       position: absolute;
       left: 120px;
-      width: 760px;
+      width: 780px;
       font-family: "Inter", sans-serif;
       font-weight: 600;
-      font-size: 44px;
+      font-size: 42px;
       line-height: 1.15;
       letter-spacing: -0.025em;
       color: #2f2f32;
+      margin: 0;
     }
     .pill {
       position: absolute;
@@ -51,25 +102,35 @@
       text-transform: uppercase;
       white-space: nowrap;
     }
+    .chip {
+      position: absolute;
+    }
     .shadow {
       position: absolute;
       border-radius: 50%;
-      background: rgba(10, 10, 10, 0.18);
-      filter: blur(18px);
-    }
-    .chip {
-      position: absolute;
+      background: rgba(10, 10, 10, 0.16);
+      filter: blur(16px);
     }
 
   </style>
   <div id="root" data-composition-id="f8" data-width="1080" data-height="1920">
-    <h1 id="f8-title" class="title clip" data-start="0" data-duration="3" style="top:300px; font-size:104px">A card and gift<br />in one, from<br />everyone.</h1>
-    <div id="f8-shadow" class="shadow clip" data-start="0" data-duration="3" style="left:400px; top:1214px; width:290px; height:44px" data-layout-ignore></div>
-    <img id="f8-chip" class="chip clip" data-start="0" data-duration="3" src="assets/chip/139-wink-left.png" alt="Chip winking" style="left:250px; top:660px; width:580px; height:580px" data-layout-ignore />
-    <div id="f8-shadow2" class="shadow clip" data-start="3" data-duration="2.5" style="left:420px; top:880px; width:240px; height:38px" data-layout-ignore></div>
-    <img id="f8-chip2" class="chip clip" data-start="3" data-duration="2.5" src="assets/chip/139-wink-left.png" alt="Chip winking" style="left:290px; top:400px; width:500px; height:500px" data-layout-ignore />
-    <img id="f8-logo" class="clip" data-start="3" data-duration="2.5" src="assets/logo/collection-pot-logo-linear-black.svg" alt="Collection Pot" style="position:absolute; left:210px; top:960px; width:660px; height:auto" />
-    <div id="f8-cta" class="pill clip" data-start="3" data-duration="2.5" style="left:50%; top:1080px; transform:translateX(-50%)">Create a Pot</div>
+    <div id="f8-snow-0" class="pot" data-layout-ignore style="left:90px; top:250px; width:30px; height:31px; background:#fffcf8; transform:rotate(10deg);"></div>
+<div id="f8-snow-1" class="pot" data-layout-ignore style="left:1000px; top:280px; width:24px; height:25px; background:#fffcf8; transform:rotate(-12deg);"></div>
+<div id="f8-snow-2" class="pot" data-layout-ignore style="left:950px; top:760px; width:34px; height:35px; background:#fffcf8; transform:rotate(16deg);"></div>
+<div id="f8-snow-3" class="pot" data-layout-ignore style="left:60px; top:860px; width:22px; height:23px; background:#fffcf8; transform:rotate(-20deg);"></div>
+<div id="f8-snow-4" class="pot" data-layout-ignore style="left:1010px; top:1060px; width:28px; height:29px; background:#fffcf8; transform:rotate(8deg);"></div>
+<div id="f8-snow-5" class="pot" data-layout-ignore style="left:100px; top:1120px; width:36px; height:37px; background:#fffcf8; transform:rotate(-6deg);"></div>
+<div id="f8-snow-6" class="pot" data-layout-ignore style="left:40px; top:520px; width:18px; height:19px; background:#fffcf8; transform:rotate(14deg);"></div>
+    <div id="f8-hill" class="pot clip" data-start="0" data-duration="3" data-layout-ignore style="left:-760px; top:1250px; width:2600px; height:2704px; background:#fffcf8; transform:rotate(180deg);"></div>
+    <div id="f8-shadow" class="shadow clip" data-start="0" data-duration="3" data-layout-ignore style="left:250px; top:1270px; width:580px; height:56px"></div>
+    <img id="f8-chip" class="chip clip" data-start="0" data-duration="3" data-layout-ignore src="assets/chip/2-christmas-chilling-with-gift.png" alt="Chip in a Santa hat leaning on a big gift" style="left:122px; top:588px; width:820px; height:820px;" />
+    <p id="f8-sf" class="standfirst clip" data-start="0" data-duration="3" style="top:300px; font-size:76px">A card and gift<br />in one, from</p>
+    <h1 id="f8-x" class="h clip" data-start="0" data-duration="3" style="top:478px; font-size:176px; width:940px"><span class="xw" data-layout-allow-overlap><span data-layout-allow-overlap style="transform:translateY(0.04em) rotate(-3deg) scale(0.95)">e</span><span data-layout-allow-overlap style="transform:translateY(-0.03em) rotate(8deg) scale(1.05)">v</span><span data-layout-allow-overlap style="transform:translateY(0.06em) rotate(-6deg) scale(0.97)">e</span><span data-layout-allow-overlap style="transform:translateY(-0.05em) rotate(4deg) scale(1.1)">r</span><span data-layout-allow-overlap style="transform:translateY(0.02em) rotate(-9deg) scale(0.96)">y</span><span data-layout-allow-overlap style="transform:translateY(-0.08em) rotate(6deg) scale(1.04)">o</span><span data-layout-allow-overlap style="transform:translateY(0.05em) rotate(-4deg) scale(0.98)">n</span><span data-layout-allow-overlap style="transform:translateY(-0.02em) rotate(7deg) scale(1.06)">e</span></span><span class="dot"></span></h1>
+    <div id="f8-hill2" class="pot clip" data-start="3" data-duration="2.5" data-layout-ignore style="left:-760px; top:990px; width:2600px; height:2704px; background:#fffcf8; transform:rotate(180deg);"></div>
+    <div id="f8-shadow2" class="shadow clip" data-start="3" data-duration="2.5" data-layout-ignore style="left:300px; top:990px; width:480px; height:50px"></div>
+    <img id="f8-chip2" class="chip clip" data-start="3" data-duration="2.5" data-layout-ignore src="assets/chip/107-hot-cocoa-cheers-with-snowflakes.png" alt="Chip in a Santa hat raising a hot cocoa with a wink" style="left:24px; top:301px; width:1000px; height:747px;" />
+    <img id="f8-logo" class="clip" data-start="3" data-duration="2.5" src="assets/logo/collection-pot-logo-linear-black.svg" alt="Collection Pot" style="position:absolute; left:210px; top:1066px; width:660px; height:auto" />
+    <div id="f8-cta" class="pill clip" data-start="3" data-duration="2.5" style="left:50%; top:1158px; transform:translateX(-50%)">Create a Pot</div>
   </div>
   <script>
     window.__timelines = window.__timelines || {};

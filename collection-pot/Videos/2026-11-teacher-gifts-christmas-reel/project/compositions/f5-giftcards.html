@@ -13,29 +13,80 @@
       position: absolute;
       inset: 0;
       overflow: hidden;
-      background: #f9b910;
-      color: #2f2f32;
+      background: #fffcf8;
     }
-    .title {
+    .pot {
+      position: absolute;
+      -webkit-mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+      mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+    }
+    .pot-line {
+      position: absolute;
+      overflow: visible;
+    }
+    .string {
+      position: absolute;
+      width: 3px;
+      background: rgba(47, 47, 50, 0.55);
+    }
+    .cap {
+      position: absolute;
+      border-radius: 6px 6px 3px 3px;
+      background: #c9c3b6;
+    }
+    .h {
       position: absolute;
       left: 120px;
-      width: 800px;
+      width: 820px;
       font-family: "Faro Display Lucky", sans-serif;
-      font-size: 116px;
       line-height: 1;
       letter-spacing: -0.01em;
       color: #2f2f32;
+      margin: 0;
+      font-weight: 400;
+    }
+    .standfirst {
+      position: absolute;
+      left: 120px;
+      width: 820px;
+      font-family: "Faro Display Lucky", sans-serif;
+      line-height: 1.02;
+      letter-spacing: -0.01em;
+      color: #2f2f32;
+      margin: 0;
+    }
+    .xw {
+      display: inline-block;
+      white-space: nowrap;
+    }
+    .xw > span {
+      display: inline-block;
+      transform-origin: 50% 85%;
+      margin-right: -0.035em;
+    }
+    .dot {
+      display: inline-block;
+      width: 0.23em;
+      height: 0.24em;
+      margin-left: 0.04em;
+      background: currentColor;
+      -webkit-mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+      mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+    }
+    .dot.gold {
+      background: #f9b910;
     }
     .sub {
       position: absolute;
       left: 120px;
-      width: 760px;
+      width: 780px;
       font-family: "Inter", sans-serif;
       font-weight: 600;
-      font-size: 44px;
+      font-size: 42px;
       line-height: 1.15;
       letter-spacing: -0.025em;
       color: #2f2f32;
+      margin: 0;
     }
     .pill {
       position: absolute;
@@ -51,23 +102,40 @@
       text-transform: uppercase;
       white-space: nowrap;
     }
+    .chip {
+      position: absolute;
+    }
     .shadow {
       position: absolute;
       border-radius: 50%;
-      background: rgba(10, 10, 10, 0.18);
-      filter: blur(18px);
-    }
-    .chip {
-      position: absolute;
+      background: rgba(10, 10, 10, 0.16);
+      filter: blur(16px);
     }
 
   </style>
   <div id="root" data-composition-id="f5" data-width="1080" data-height="1920">
+    <div id="f5-bg" class="pot" data-layout-ignore style="left:-140px; top:860px; width:1800px; height:1872px; background:#f9b910; transform:rotate(-16deg);"></div>
+    <div id="f5-snow-0" class="pot" data-layout-ignore style="left:940px; top:960px; width:34px; height:35px; background:#fffcf8; transform:rotate(12deg);"></div>
+<div id="f5-snow-1" class="pot" data-layout-ignore style="left:1010px; top:1180px; width:22px; height:23px; background:#fffcf8; transform:rotate(-20deg);"></div>
+<div id="f5-snow-2" class="pot" data-layout-ignore style="left:70px; top:1240px; width:28px; height:29px; background:#fffcf8; transform:rotate(25deg);"></div>
+<div id="f5-snow-3" class="pot" data-layout-ignore style="left:980px; top:1420px; width:40px; height:42px; background:#fffcf8; transform:rotate(8deg);"></div>
+<div id="f5-snow-4" class="pot" data-layout-ignore style="left:50px; top:1560px; width:20px; height:21px; background:#fffcf8; transform:rotate(-10deg);"></div>
+<div id="f5-snow-5" class="pot" data-layout-ignore style="left:1000px; top:1700px; width:30px; height:31px; background:#fffcf8; transform:rotate(18deg);"></div>
+    <div id="f5-b1-s" class="string" data-layout-ignore style="left:798px; top:0; height:120px"></div>
+<div id="f5-b1-c" class="cap" data-layout-ignore style="left:785px; top:114px; width:29px; height:14px"></div>
+<div id="f5-b1-p" class="pot" data-layout-ignore style="left:757px; top:130px; width:86px; height:89px; background:#b03d3d; transform:rotate(0deg);"></div>
+    <div id="f5-b2-s" class="string" data-layout-ignore style="left:914px; top:0; height:215px"></div>
+<div id="f5-b2-c" class="cap" data-layout-ignore style="left:903px; top:209px; width:24px; height:11px"></div>
+<div id="f5-b2-p" class="pot" data-layout-ignore style="left:880px; top:223px; width:70px; height:73px; background:#37b051; transform:rotate(0deg);"></div>
+    <div id="f5-b3-s" class="string" data-layout-ignore style="left:1010px; top:0; height:92px"></div>
+<div id="f5-b3-c" class="cap" data-layout-ignore style="left:1002px; top:86px; width:20px; height:9px"></div>
+<div id="f5-b3-p" class="pot" data-layout-ignore style="left:983px; top:99px; width:58px; height:60px; background:#f9b910; transform:rotate(0deg);"></div>
+    <div id="f5-shadow" class="shadow" data-layout-ignore style="left:270px; top:1700px; width:600px; height:60px"></div>
+    <img id="f5-chip" class="chip clip" data-start="0" data-duration="4.5" data-layout-ignore src="assets/chip/143-dreaming-of-christmas-presents.png" alt="Chip in a Santa hat, dreaming of presents" style="left:14px; top:979px; width:1040px; height:777px;" />
     <div id="f5-new" class="pill clip" data-start="0" data-duration="4.5" style="left:120px; top:300px; transform:rotate(-4deg)">New: Gift Cards</div>
-    <h1 id="f5-title" class="title clip" data-start="0" data-duration="4.5" style="top:420px">Now the gift’s<br />sorted too.</h1>
-    <p id="f5-sub" class="sub clip" data-start="0" data-duration="4.5" style="top:676px">A shop they love, or a multi-store card.</p>
-    <div id="f5-shadow" class="shadow clip" data-start="0" data-duration="4.5" style="left:340px; top:1640px; width:400px; height:60px" data-layout-ignore></div>
-    <img id="f5-chip" class="chip clip" data-start="0" data-duration="4.5" src="assets/chip/121-with-gift.png" alt="Chip holding a gift" style="left:40px; top:700px; width:1000px; height:1000px" data-layout-ignore />
+    <p id="f5-sf" class="standfirst clip" data-start="0" data-duration="4.5" style="top:404px; font-size:88px">Now the gift’s</p>
+    <h1 id="f5-x" class="h clip" data-start="0" data-duration="4.5" style="top:500px; font-size:210px; width:900px"><span class="xw" data-layout-allow-overlap><span data-layout-allow-overlap style="transform:translateY(0.00em) rotate(-7deg) scale(1.0)">s</span><span data-layout-allow-overlap style="transform:translateY(-0.07em) rotate(5deg) scale(1.08)">o</span><span data-layout-allow-overlap style="transform:translateY(0.04em) rotate(-3deg) scale(0.95)">r</span><span data-layout-allow-overlap style="transform:translateY(-0.03em) rotate(8deg) scale(1.05)">t</span><span data-layout-allow-overlap style="transform:translateY(0.06em) rotate(-6deg) scale(0.97)">e</span><span data-layout-allow-overlap style="transform:translateY(-0.05em) rotate(4deg) scale(1.1)">d</span></span><br /><span style="margin-left:230px"><span class="xw" data-layout-allow-overlap><span data-layout-allow-overlap style="transform:translateY(0.06em) rotate(-6deg) scale(0.97)">t</span><span data-layout-allow-overlap style="transform:translateY(-0.05em) rotate(4deg) scale(1.1)">o</span><span data-layout-allow-overlap style="transform:translateY(0.02em) rotate(-9deg) scale(0.96)">o</span></span><span class="dot"></span></span></h1>
+    <p id="f5-sub" class="sub clip" data-start="0" data-duration="4.5" style="top:928px">A shop they love, or a multi-store card.</p>
   </div>
   <script>
     window.__timelines = window.__timelines || {};

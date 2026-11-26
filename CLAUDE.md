@@ -22,6 +22,12 @@ Every script or storyline names its territory at the top. When offering options,
 4. Post brown envelope era
 5. Cultural moments (e.g. GTA 6 launch, The Traitors, Dune 3, Avengers)
 
+### Look and feel (feedback, Nov 2026)
+- **Not too yellow.** Never a frame that's all Gold. Mix Wedding White, Gold and a touch of Work Bash Black, divided by big crops of the Pot shape (brand pp.42–44).
+- **The Pot shape** comes from `collection-pot/brand/references/website/site-assets/Marketing Website/Icons/potYellow.svg`. Recolour it (CSS mask) or reuse its path for outlines, but never redraw it. Use it as background crops, punctuation (a Pot full stop), shapes around Chip, and seasonal props (e.g. baubles, snow).
+- **Playful type** (brand p.50): standard Faro headlines plus "expressive" bouncing letters on 1–2 key words, with a small standfirst above.
+- **Seasonal pieces must feel seasonal.** Use Chip's matching renders (e.g. the Santa-hat renders for Christmas) and seasonal props built from the Pot shape.
+
 ### Hard rules
 - **No people's faces** in any video. Hands, objects and places only.
 - **Never recreate a brand asset** (logo, Chip, the Pot icon, printed cards, fonts). Always use the files in `collection-pot/brand/` as they are. Chip is never AI-generated, re-drawn or animated by an AI video model.

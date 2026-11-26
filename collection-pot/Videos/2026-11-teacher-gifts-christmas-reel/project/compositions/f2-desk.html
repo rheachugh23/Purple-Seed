@@ -67,6 +67,37 @@
       font-size: 26px;
       line-height: 1.25;
     }
+    .dot {
+      display: inline-block;
+      width: 0.23em;
+      height: 0.24em;
+      margin-left: 0.04em;
+      background: #f9b910;
+      -webkit-mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+      mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+    }
+    .xw {
+      display: inline-block;
+      white-space: nowrap;
+    }
+    .xw > span {
+      display: inline-block;
+      transform-origin: 50% 85%;
+      margin-right: -0.035em;
+    }
+    .standfirst {
+      position: absolute;
+      left: 120px;
+      top: 300px;
+      width: 820px;
+      font-family: "Faro Display Lucky", sans-serif;
+      font-size: 66px;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      color: #fffcf8;
+      text-shadow: 0 6px 28px rgba(0, 0, 0, 0.35);
+      margin: 0;
+    }
 
   </style>
   <div id="root" data-composition-id="f2" data-width="1080" data-height="1920">
@@ -122,7 +153,7 @@
       <use href="#f2-hand" transform="translate(215 1500) rotate(14)" />
       <use href="#f2-hand" transform="translate(870 1520) scale(-1 1) rotate(14)" />
     </svg>
-    <h1 id="f2-title" class="title clip" data-start="0" data-duration="3">From the<br />whole class.</h1>
+    <h1 id="f2-title" class="title clip" data-start="0" data-duration="3">From the<br />whole class<span class="dot gold"></span></h1>
     <div id="f2-tag" class="sketch-tag clip" data-start="0" data-duration="3" data-layout-ignore>SKETCH · Higgsfield plate 2<br />Desk from above: hands come in, rest by the phone</div>
   </div>
   <script>

@@ -1,0 +1,75 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Faro Display Lucky";
+      src: url("assets/fonts/Faro-DisplayLucky.otf") format("opentype");
+    }
+    @font-face {
+      font-family: "Inter";
+      src: url("assets/fonts/Inter-VariableFont_opszwght.ttf") format("truetype");
+      font-weight: 100 900;
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: #f9b910;
+      color: #2f2f32;
+    }
+    .title {
+      position: absolute;
+      left: 120px;
+      width: 800px;
+      font-family: "Faro Display Lucky", sans-serif;
+      font-size: 116px;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      color: #2f2f32;
+    }
+    .sub {
+      position: absolute;
+      left: 120px;
+      width: 760px;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 44px;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+      color: #2f2f32;
+    }
+    .pill {
+      position: absolute;
+      padding: 22px 38px 20px;
+      border-radius: 999px;
+      background: #2f2f32;
+      color: #fffcf8;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 1;
+      letter-spacing: 0.025em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .shadow {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(10, 10, 10, 0.18);
+      filter: blur(18px);
+    }
+    .chip {
+      position: absolute;
+    }
+
+  </style>
+  <div id="root" data-composition-id="f7" data-width="1080" data-height="1920">
+    <h1 id="f7-title" class="title clip" data-start="0" data-duration="4" style="top:300px">No trip to<br />the shops.</h1>
+    <p id="f7-sub" class="sub clip" data-start="0" data-duration="4" style="top:560px">Print it at home,<br />or we’ll post it to your door.</p>
+    <div id="f7-shadow" class="shadow clip" data-start="0" data-duration="4" style="left:300px; top:1390px; width:500px; height:70px" data-layout-ignore></div>
+    <img id="f7-card" class="clip" data-start="0" data-duration="4" src="assets/card/no1-teacher-card.png" alt="The printed No.1 Teacher card" style="position:absolute; left:290px; top:700px; width:500px; height:698px; transform:rotate(-5deg); box-shadow: 0 18px 36px rgba(10,10,10,0.22)" />
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    window.__timelines["f7"] = gsap.timeline({ paused: true });
+  </script>
+</template>

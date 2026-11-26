@@ -1,0 +1,75 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Faro Display Lucky";
+      src: url("assets/fonts/Faro-DisplayLucky.otf") format("opentype");
+    }
+    @font-face {
+      font-family: "Inter";
+      src: url("assets/fonts/Inter-VariableFont_opszwght.ttf") format("truetype");
+      font-weight: 100 900;
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: #f9b910;
+      color: #2f2f32;
+    }
+    .title {
+      position: absolute;
+      left: 120px;
+      width: 800px;
+      font-family: "Faro Display Lucky", sans-serif;
+      font-size: 116px;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      color: #2f2f32;
+    }
+    .sub {
+      position: absolute;
+      left: 120px;
+      width: 760px;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 44px;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+      color: #2f2f32;
+    }
+    .pill {
+      position: absolute;
+      padding: 22px 38px 20px;
+      border-radius: 999px;
+      background: #2f2f32;
+      color: #fffcf8;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 1;
+      letter-spacing: 0.025em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .shadow {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(10, 10, 10, 0.18);
+      filter: blur(18px);
+    }
+    .chip {
+      position: absolute;
+    }
+
+  </style>
+  <div id="root" data-composition-id="f6" data-width="1080" data-height="1920">
+    <h1 id="f6-title" class="title clip" data-start="0" data-duration="3" style="top:300px">One Pot.<br />One link.</h1>
+    <p id="f6-sub" class="sub clip" data-start="0" data-duration="3" style="top:560px">Everyone chips in.</p>
+    <div id="f6-shadow" class="shadow clip" data-start="0" data-duration="3" style="left:250px; top:1640px; width:420px; height:60px" data-layout-ignore></div>
+    <img id="f6-chip" class="chip clip" data-start="0" data-duration="3" src="assets/chip/24-share-a-pot-2.png" alt="Chip sending the Pot link" style="left:60px; top:680px; width:1000px; height:1000px" data-layout-ignore />
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    window.__timelines["f6"] = gsap.timeline({ paused: true });
+  </script>
+</template>

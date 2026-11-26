@@ -1,0 +1,78 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Faro Display Lucky";
+      src: url("assets/fonts/Faro-DisplayLucky.otf") format("opentype");
+    }
+    @font-face {
+      font-family: "Inter";
+      src: url("assets/fonts/Inter-VariableFont_opszwght.ttf") format("truetype");
+      font-weight: 100 900;
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: #f9b910;
+      color: #2f2f32;
+    }
+    .title {
+      position: absolute;
+      left: 120px;
+      width: 800px;
+      font-family: "Faro Display Lucky", sans-serif;
+      font-size: 116px;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      color: #2f2f32;
+    }
+    .sub {
+      position: absolute;
+      left: 120px;
+      width: 760px;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 44px;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+      color: #2f2f32;
+    }
+    .pill {
+      position: absolute;
+      padding: 22px 38px 20px;
+      border-radius: 999px;
+      background: #2f2f32;
+      color: #fffcf8;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 1;
+      letter-spacing: 0.025em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .shadow {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(10, 10, 10, 0.18);
+      filter: blur(18px);
+    }
+    .chip {
+      position: absolute;
+    }
+
+  </style>
+  <div id="root" data-composition-id="f8" data-width="1080" data-height="1920">
+    <h1 id="f8-title" class="title clip" data-start="0" data-duration="3" style="top:300px; font-size:104px">A card and gift<br />in one, from<br />everyone.</h1>
+    <div id="f8-shadow" class="shadow clip" data-start="0" data-duration="3" style="left:400px; top:1214px; width:290px; height:44px" data-layout-ignore></div>
+    <img id="f8-chip" class="chip clip" data-start="0" data-duration="3" src="assets/chip/139-wink-left.png" alt="Chip winking" style="left:250px; top:660px; width:580px; height:580px" data-layout-ignore />
+    <div id="f8-shadow2" class="shadow clip" data-start="3" data-duration="2.5" style="left:420px; top:880px; width:240px; height:38px" data-layout-ignore></div>
+    <img id="f8-chip2" class="chip clip" data-start="3" data-duration="2.5" src="assets/chip/139-wink-left.png" alt="Chip winking" style="left:290px; top:400px; width:500px; height:500px" data-layout-ignore />
+    <img id="f8-logo" class="clip" data-start="3" data-duration="2.5" src="assets/logo/collection-pot-logo-linear-black.svg" alt="Collection Pot" style="position:absolute; left:210px; top:960px; width:660px; height:auto" />
+    <div id="f8-cta" class="pill clip" data-start="3" data-duration="2.5" style="left:50%; top:1080px; transform:translateX(-50%)">Create a Pot</div>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    window.__timelines["f8"] = gsap.timeline({ paused: true });
+  </script>
+</template>

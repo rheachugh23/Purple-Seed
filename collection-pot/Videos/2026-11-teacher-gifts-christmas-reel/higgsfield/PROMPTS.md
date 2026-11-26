@@ -1,0 +1,59 @@
+# Higgsfield prompts: "Last day of term"
+
+Two live-action plates. Generate them in Higgsfield, then save the files here as:
+- `higgsfield/plate-1-classroom.mp4`
+- `higgsfield/plate-2-desk.mp4`
+
+Or just tell me when they're done and I'll find them in your Higgsfield history.
+
+**Settings for both:**
+- **Model:** Cinema Studio Video 3.0
+- **Aspect ratio:** 9:16
+- **Resolution:** 1080p
+- **Genre:** drama
+- **Audio:** off (we add our own sound)
+
+**Rules for both:**
+- No faces or people beyond hands and forearms.
+- No text, logos or readable writing anywhere.
+- No penguins or mascots.
+- Chip, the logo and the card are added afterwards in HyperFrames from the brand files.
+
+Generate 2 or 3 takes of each and keep the best one. The classroom shot is the one most likely to need a retake.
+
+---
+
+## Plate 1: empty classroom push-in
+
+- **Used at:** 0.0–2.5s
+- **Duration:** 5 s (we use about 2.5 s)
+
+**Prompt:**
+> Empty UK primary school classroom at 3:30pm on the last day of term before Christmas. No people anywhere. Chairs are stacked upside down on the pupils' desks. Handmade paper chains in red, green and gold hang across the ceiling. Low winter sun streams in through a window on the left, making long warm shadows and catching dust in the air; the rest of the room is dim and quiet. A string of warm fairy lights glows on the teacher's desk at the back of the room. A smartphone lies face up on the teacher's desk, and its screen lights up softly about one second in. Slow, steady dolly push forward between the desks towards the teacher's desk. 35mm lens, shallow depth of field, natural colour, gentle film grain, realistic. Keep the top third of the frame calm and plain (shadowed wall and ceiling) to leave room for titles.
+
+**Avoid (negative prompt, if the model has one):**
+> people, faces, children, adults, silhouettes, text, letters, words, writing on the whiteboard, logos, brand names, posters with writing, cartoon, illustration, penguin, harsh light, camera shake
+
+---
+
+## Plate 2: teacher's desk from above (one take, used three times)
+
+- **Used at:** 2.5–12.5s. The hands rest at 2.5–5.5s. The plate is softened behind the message cards at 5.5–10s. The hands clasp at 10–12.5s.
+- **Duration:** 12 s
+- **Camera:** completely static. We place the real Teacher Pot screen onto the phone afterwards, so the phone must not move.
+
+**Prompt:**
+> Locked-off overhead shot looking straight down at a wooden teacher's desk on the last day of term before Christmas. Warm late-afternoon winter light from the left, soft natural shadows. On the desk: a few school worksheets, a red pen, a white mug of tea, a tiny potted Christmas tree and a loop of colourful paper chain. A smartphone lies face up in the centre of the frame, slightly below centre, with a plain bright green screen; the phone never moves. At about one second, two hands in the sleeves of a cosy knitted jumper slide in from the bottom of the frame and rest flat on the desk on either side of the phone, not touching it. They stay still, and the fingers give one small happy tap. Around eight seconds in, the hands come together and clasp just below the phone, a quiet moment of joy. Only hands and forearms are ever in frame, never a face or head. Camera completely still. Keep the top third of the frame as plain wooden desk to leave room for titles. Realistic skin, five fingers on each hand, natural colour, shallow depth of field.
+
+**Avoid (negative prompt, if the model has one):**
+> face, head, hair, body above the wrists, people, extra fingers, hands covering the phone, phone moving, camera movement, text on screen, logos, writing on the worksheets, cartoon, illustration, penguin
+
+**If the green screen doesn't hold:** a plain black screen also works. We overlay the Pot screen as long as the phone stays still and the hands don't cover it.
+
+---
+
+## Not from Higgsfield (by brand rule)
+- **Chip:** official 3D renders from `brand/mascot-3d/renders/` (121, 24, 139).
+- **Logo:** `brand/logos/collection-pot-logo-linear-black.svg`.
+- **No.1 Teacher printed card:** `brand/references/website/site-assets/PrintedCards/HIPPY_NO1LARGE.png`.
+- **Teacher Pot phone screen:** captured from the live demo at app.collectionpot.com/demo/teacher.

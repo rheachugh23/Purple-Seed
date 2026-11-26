@@ -130,7 +130,7 @@ The Pot shape is the graphic system. It's the 'O' in the logo, a crop or backgro
 - **Body:** Inter Regular, sentence case, tracking −25, leading 120%.
 - **Buttons and stickers:** Inter SemiBold, UPPERCASE, tracking +25, leading 100% (CREATE A POT, CHAT TO US, VIEW MESSAGES).
 - **Text motion:** hold text at least 2 s; for longer copy, allow about 1.5 s per line. Styles: "Max relaxing" (letters slide in, squish, then relax into a lean; for under 5 words), "Chip slide in" (letters bounce up in Chip's trail), and "Longer text" (line by line from below the baseline).
-- Faro Display Lucky is a commercial font (Displaay). The `.otf` here was pulled from the site's CDN, so check the licence covers your use. Inter is free (Google Fonts).
+- Faro Display Lucky is a commercial font (Displaay). The `.otf` here was pulled from the site's CDN, so check the licence covers your use. Inter is free (SIL Open Font License); the variable font files (upright and italic, weights 100–900) are in `fonts/`.
 
 ## 8. Icons (p.55)
 Functional icons feature the Pot device. Use them as icons, never as hero illustrations. The files in `icons/` are the site's current UI and occasion icons, and not all of them follow the Pot style.

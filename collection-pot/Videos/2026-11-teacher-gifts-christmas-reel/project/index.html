@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>Last day of term</title>
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      :root {
+        --cp-gold: #f9b910;
+        --cp-black: #2f2f32;
+        --cp-white: #fffcf8;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--cp-gold);
+      }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="29.5"
+      data-width="1080"
+      data-height="1920"
+    >
+      <div id="f1" data-composition-id="f1" data-composition-src="compositions/f1-classroom.html" data-start="0" data-duration="2.5" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="f2" data-composition-id="f2" data-composition-src="compositions/f2-desk.html" data-start="2.5" data-duration="3" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="f3" data-composition-id="f3" data-composition-src="compositions/f3-messages.html" data-start="5.5" data-duration="4.5" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="f4" data-composition-id="f4" data-composition-src="compositions/f4-hands.html" data-start="10" data-duration="2.5" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="f5" data-composition-id="f5" data-composition-src="compositions/f5-giftcards.html" data-start="12.5" data-duration="4.5" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="f6" data-composition-id="f6" data-composition-src="compositions/f6-share.html" data-start="17" data-duration="3" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="f7" data-composition-id="f7" data-composition-src="compositions/f7-card.html" data-start="20" data-duration="4" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="f8" data-composition-id="f8" data-composition-src="compositions/f8-endcard.html" data-start="24" data-duration="5.5" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

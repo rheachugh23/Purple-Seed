@@ -20,7 +20,7 @@ collection-pot/
 │   ├── mascot-3d/renders/     ← 148 official 3D Chip renders (PNG, from Drive)
 │   ├── mascot-2d/             ← 2D Chip SVGs (from the live site)
 │   ├── icons/                 ← UI and occasion icons used on the site
-│   ├── fonts/                 ← Faro Display Lucky (headline font)
+│   ├── fonts/                 ← Faro Display Lucky (headlines) + Inter variable (body, UI)
 │   └── references/
 │       ├── website/home/      ← collectionpot.com screenshots, HTML, copy text
 │       ├── website/site-assets/ ← every image/SVG the site and demos load, original CDN paths

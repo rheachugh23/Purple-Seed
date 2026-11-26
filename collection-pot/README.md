@@ -25,9 +25,13 @@ collection-pot/
 │       ├── website/home/      ← collectionpot.com screenshots, HTML, copy text
 │       ├── website/site-assets/ ← every image/SVG the site and demos load, original CDN paths
 │       └── demo-pots/<occasion>/ ← each demo Pot: desktop + mobile screenshot, HTML, copy
-└── assets/                    ← marketing assets, one folder each
-    └── README.md              ← naming + per-asset conventions
+├── assets/                    ← static marketing assets, one folder each
+│   └── README.md              ← naming + per-asset conventions
+└── Videos/                    ← videos, one folder per video (script → storyboard → final)
+    └── README.md              ← video folder layout, workflow and rules
 ```
+
+Videos follow the same pattern: one `Videos/YYYY-MM-<short-slug>/` folder per video. See `Videos/README.md`.
 
 ## Making a new asset
 

@@ -1,0 +1,24 @@
+{
+  "name": "purple-seed",
+  "version": "1.0.0",
+  "description": "Purple Seed video projects",
+  "scripts": {
+    "hyperframes": "hyperframes",
+    "preview": "hyperframes preview",
+    "render": "hyperframes render",
+    "doctor": "hyperframes doctor"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rheachugh23/Purple-Seed.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rheachugh23/Purple-Seed/issues"
+  },
+  "homepage": "https://github.com/rheachugh23/Purple-Seed#readme",
+  "devDependencies": {
+    "hyperframes": "0.9.98"
+  },
+  "private": true
+}

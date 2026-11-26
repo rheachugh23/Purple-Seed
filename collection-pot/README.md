@@ -18,6 +18,7 @@ collection-pot/
 │   ├── guidelines/            ← full brand guidelines PDF (Nov 2026, 63 pages)
 │   ├── logos/                 ← SVG logos (linear black/white, Pot-icon lockup)
 │   ├── mascot-3d/renders/     ← 148 official 3D Chip renders (PNG, from Drive)
+│   ├── mascot-3d/christmas-emailer/ ← the two Christmas Chips from the teacher-gifts emailer (screenshots; ask for full-size originals)
 │   ├── mascot-2d/             ← 2D Chip SVGs (from the live site)
 │   ├── icons/                 ← UI and occasion icons used on the site
 │   ├── fonts/                 ← Faro Display Lucky (headlines) + Inter variable (body, UI)

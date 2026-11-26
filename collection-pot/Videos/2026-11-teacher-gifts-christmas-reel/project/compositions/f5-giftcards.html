@@ -111,7 +111,14 @@
       background: rgba(10, 10, 10, 0.16);
       filter: blur(16px);
     }
-
+    .chipwrap {
+      position: absolute;
+    }
+    .hat {
+      position: absolute;
+      transform: rotate(6deg);
+      transform-origin: 50% 100%;
+    }
   </style>
   <div id="root" data-composition-id="f5" data-width="1080" data-height="1920">
     <div id="f5-bg" class="pot" data-layout-ignore style="left:-140px; top:860px; width:1800px; height:1872px; background:#f9b910; transform:rotate(-16deg);"></div>
@@ -130,12 +137,14 @@
     <div id="f5-b3-s" class="string" data-layout-ignore style="left:1010px; top:0; height:92px"></div>
 <div id="f5-b3-c" class="cap" data-layout-ignore style="left:1002px; top:86px; width:20px; height:9px"></div>
 <div id="f5-b3-p" class="pot" data-layout-ignore style="left:983px; top:99px; width:58px; height:60px; background:#f9b910; transform:rotate(0deg);"></div>
-    <div id="f5-shadow" class="shadow" data-layout-ignore style="left:270px; top:1700px; width:600px; height:60px"></div>
-    <img id="f5-chip" class="chip clip" data-start="0" data-duration="4.5" data-layout-ignore src="assets/chip/143-dreaming-of-christmas-presents.png" alt="Chip in a Santa hat, dreaming of presents" style="left:14px; top:979px; width:1040px; height:777px;" />
+    <div id="f5-shadow" class="shadow" data-layout-ignore style="left:330px; top:1610px; width:420px; height:56px"></div>
+    <div id="f5-chip" class="chipwrap clip" data-start="0" data-duration="4.5" data-layout-ignore style="left:90px; top:802px; width:900px; height:900px">
+      <img id="f5-chip-render" src="assets/chip/121-with-gift.png" alt="Chip holding a gift, in a Santa hat" style="position:absolute; inset:0; width:100%; height:100%" />
+      <img id="f5-chip-hat" class="hat" src="assets/chip/santa-hat-from-108.png" alt="" style="left:31.934%; top:6.445%; width:35.742%; height:21.680%" />
+    </div>
     <div id="f5-new" class="pill clip" data-start="0" data-duration="4.5" style="left:120px; top:300px; transform:rotate(-4deg)">New: Gift Cards</div>
-    <p id="f5-sf" class="standfirst clip" data-start="0" data-duration="4.5" style="top:404px; font-size:88px">Now the gift’s</p>
-    <h1 id="f5-x" class="h clip" data-start="0" data-duration="4.5" style="top:500px; font-size:210px; width:900px"><span class="xw" data-layout-allow-overlap><span data-layout-allow-overlap style="transform:translateY(0.00em) rotate(-7deg) scale(1.0)">s</span><span data-layout-allow-overlap style="transform:translateY(-0.07em) rotate(5deg) scale(1.08)">o</span><span data-layout-allow-overlap style="transform:translateY(0.04em) rotate(-3deg) scale(0.95)">r</span><span data-layout-allow-overlap style="transform:translateY(-0.03em) rotate(8deg) scale(1.05)">t</span><span data-layout-allow-overlap style="transform:translateY(0.06em) rotate(-6deg) scale(0.97)">e</span><span data-layout-allow-overlap style="transform:translateY(-0.05em) rotate(4deg) scale(1.1)">d</span></span><br /><span style="margin-left:230px"><span class="xw" data-layout-allow-overlap><span data-layout-allow-overlap style="transform:translateY(0.06em) rotate(-6deg) scale(0.97)">t</span><span data-layout-allow-overlap style="transform:translateY(-0.05em) rotate(4deg) scale(1.1)">o</span><span data-layout-allow-overlap style="transform:translateY(0.02em) rotate(-9deg) scale(0.96)">o</span></span><span class="dot"></span></span></h1>
-    <p id="f5-sub" class="sub clip" data-start="0" data-duration="4.5" style="top:928px">A shop they love, or a multi-store card.</p>
+    <h1 id="f5-h" class="h clip" data-start="0" data-duration="4.5" style="top:420px; font-size:116px">Now the gift’s<br />sorted too.</h1>
+    <p id="f5-sub" class="sub clip" data-start="0" data-duration="4.5" style="top:676px">A shop they love, or a multi-store card.</p>
   </div>
   <script>
     window.__timelines = window.__timelines || {};

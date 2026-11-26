@@ -111,11 +111,17 @@
       background: rgba(10, 10, 10, 0.16);
       filter: blur(16px);
     }
-
+    .chipwrap {
+      position: absolute;
+    }
+    .hat {
+      position: absolute;
+      transform: rotate(6deg);
+      transform-origin: 50% 100%;
+    }
   </style>
   <div id="root" data-composition-id="f7" data-width="1080" data-height="1920">
-    <div id="f7-bg" class="pot" data-layout-ignore style="left:-70px; top:690px; width:800px; height:832px; background:#2f2f32; transform:rotate(-12deg);"></div>
-    <div id="f7-p1" class="pot" data-layout-ignore style="left:610px; top:1350px; width:78px; height:81px; background:#f9b910; transform:rotate(14deg);"></div>
+    <div id="f7-bg" class="pot" data-layout-ignore style="left:-90px; top:700px; width:760px; height:790px; background:#2f2f32; transform:rotate(-12deg);"></div>
     <svg id="f7-p2" class="pot-line" data-layout-ignore viewBox="0 0 50 52" style="left:70px; top:1530px; width:64px; height:67px; transform:rotate(-18deg)"><path d="M33.4026 0H15.7481C12.1464 0 11.7026 1.20578 10.7315 3.11657C10.2363 4.24328 1.35433 21.4404 0.550385 23.114C0.0230001 24.0958 -0.0155893 25.2093 0.00370528 26.3031C0.331713 43.5925 12.4423 52 24.5593 52H24.5914C36.7084 52 48.8254 43.5925 49.147 26.3031C49.1663 25.2093 49.1277 24.0892 48.6003 23.114C47.7964 21.4339 38.9209 4.23669 38.4192 3.11657C37.4416 1.19919 36.9978 0 33.4026 0Z" fill="none" stroke="#2f2f32" stroke-width="4" vector-effect="non-scaling-stroke"/></svg>
     <div id="f7-b1-s" class="string" data-layout-ignore style="left:828px; top:0; height:150px"></div>
 <div id="f7-b1-c" class="cap" data-layout-ignore style="left:816px; top:144px; width:27px; height:13px"></div>
@@ -128,9 +134,9 @@
 <div id="f7-b3-p" class="pot" data-layout-ignore style="left:1004px; top:211px; width:52px; height:54px; background:#f9b910; transform:rotate(0deg);"></div>
     <div id="f7-card-shadow" class="shadow" data-layout-ignore style="left:150px; top:1250px; width:380px; height:56px"></div>
     <img id="f7-card" class="clip" data-start="0" data-duration="4" src="assets/card/no1-teacher-card.png" alt="The printed No.1 Teacher card" style="position:absolute; left:110px; top:720px; width:400px; height:558px; transform:rotate(-8deg); box-shadow: 0 18px 36px rgba(10,10,10,0.3)" />
-    <div id="f7-shadow" class="shadow" data-layout-ignore style="left:600px; top:1240px; width:420px; height:54px"></div>
-    <img id="f7-chip" class="chip clip" data-start="0" data-duration="4" data-layout-ignore src="assets/chip/141-christmas-reading-card.png" alt="Chip in a Santa hat reading a card" style="left:315px; top:686px; width:940px; height:631px;" />
-    <h1 id="f7-h" class="h clip" data-start="0" data-duration="4" style="top:300px; font-size:116px">No trip to<br />the shops<span class="dot gold"></span></h1>
+    <div id="f7-shadow" class="shadow" data-layout-ignore style="left:650px; top:1250px; width:360px; height:50px"></div>
+    <img id="f7-chip" class="chip clip" data-start="0" data-duration="4" data-layout-ignore src="assets/chip/xmas-reading-qr-card-cutout.png" alt="Chip in a Santa hat reading a card of messages with a QR code" style="left:265px; top:604px; width:1171px; height:719px;" />
+    <h1 id="f7-h" class="h clip" data-start="0" data-duration="4" style="top:300px; font-size:116px">No trip to<br />the shops.</h1>
     <p id="f7-sub" class="sub clip" data-start="0" data-duration="4" style="top:560px">Print it at home,<br />or we’ll post it to your door.</p>
   </div>
   <script>

@@ -24,9 +24,10 @@ Every script or storyline names its territory at the top. When offering options,
 
 ### Look and feel (feedback, Nov 2026)
 - **Not too yellow.** Never a frame that's all Gold. Mix Wedding White, Gold and a touch of Work Bash Black, divided by big crops of the Pot shape (brand pp.42–44).
-- **The Pot shape** comes from `collection-pot/brand/references/website/site-assets/Marketing Website/Icons/potYellow.svg`. Recolour it (CSS mask) or reuse its path for outlines, but never redraw it. Use it as background crops, punctuation (a Pot full stop), shapes around Chip, and seasonal props (e.g. baubles, snow).
-- **Playful type** (brand p.50): standard Faro headlines plus "expressive" bouncing letters on 1–2 key words, with a small standfirst above.
-- **Seasonal pieces must feel seasonal.** Use Chip's matching renders (e.g. the Santa-hat renders for Christmas) and seasonal props built from the Pot shape.
+- **The Pot shape** comes from `collection-pot/brand/references/website/site-assets/Marketing Website/Icons/potYellow.svg`. Recolour it (CSS mask) or reuse its path for outlines, but never redraw it. Use it as background crops, shapes around Chip, and seasonal props (e.g. baubles, snow).
+- **Type:** standard Faro Display Lucky headlines only (sentence case). No expressive bouncing letters and no Pot full stops: the client found them too messy.
+- **Seasonal pieces must feel seasonal,** with props built from the Pot shape (baubles, snow, a snowy hill).
+- **Seasonal Chip:** use the standard renders with at most a seasonal hat added as its own layer (a Santa hat lifted from an official render), or the seasonal versions the client supplied (`collection-pot/brand/mascot-3d/christmas-emailer/`). Don't use other Chip variants for seasonal looks.
 
 ### Hard rules
 - **No people's faces** in any video. Hands, objects and places only.

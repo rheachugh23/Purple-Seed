@@ -7,9 +7,9 @@
 | **Channel** | Instagram Reels |
 | **Format** | 1080×1920, 30 fps, 25 to 30 s, music and sound effects, no voiceover |
 | **Tools** | Higgsfield (live-action plates, no faces) + HyperFrames (type, Chip, logo, edit, render) |
-| **Chip** | 3D Santa-hat renders only (no 2D Chip in this piece): 143 Dreaming of Christmas presents, 141 Christmas reading card, 2 Christmas chilling with gift, 107 Hot cocoa cheers |
+| **Chip** | 3D only (no 2D Chip): renders 121 With gift and 139 Wink left, each with a Santa-hat layer (hat lifted from render 108), plus the two Christmas emailer images (cut out) |
 | **Territory** | 2. Gifting is better when done together |
-| **Status** | Step 2: storyboard v2 (festive restyle), waiting for approval and the two Higgsfield plates |
+| **Status** | Step 2: storyboard v3, waiting for approval and the two Higgsfield plates |
 
 ## Files
 - `SCRIPT.md`: the locked script, "Last day of term" (territory 2), in the four-column format

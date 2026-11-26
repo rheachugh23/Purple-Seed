@@ -14,6 +14,17 @@ A condensed version of `guidelines/Collection_Pot_Brand_Guidelines_Nov2026.pdf` 
 - **Personality:** Personal · Thoughtful · Quick
 - **Story cast** (made-up relatable characters): Dan from Finance's leaving prezzie, Aunt Su's big 50th surprise, Sam and Chris' wedding gift.
 
+### Communication territories
+Every piece of comms sits in one of these five territories (set by the Collection Pot team, Nov 2026; not in the PDF). Name the territory at the top of every script or storyline. When offering options, spread them across different territories.
+
+| # | Territory | Example angles (draft, not from the team) |
+|---|---|---|
+| 1 | **Awkwardness of a gift organiser** | Chasing money, reminder messages, sharing bank details, the group chat, being the one who has to sort it |
+| 2 | **Gifting is better when done together** | Meaningful gifting, the joy of the receiver, everyone's messages in one place |
+| 3 | **Poor gift giving** | Gifts nobody really chose: the 12th mug, the last-minute petrol-station present |
+| 4 | **Post brown envelope era** | The old way: the brown envelope of cash passed round the office or the class (copy bank: "In our post-envelope era.") |
+| 5 | **Cultural moments** | Riding big moments in culture, e.g. the GTA 6 launch, The Traitors, Dune 3, Avengers. Nod to them; never use their logos, characters, footage or music |
+
 ## 2. Tone of voice (pp.10–17)
 | Trait | Means | Tips |
 |---|---|---|

@@ -16,7 +16,7 @@ Videos/
 
 ## How we make a video
 
-1. **Script.** Three storylines in words, pick one, then lock the copy.
+1. **Script.** Three storylines, each from a different communication territory (`../brand/BRAND.md`). Pick one, then lock the copy. Every script is a table with the columns **Timing · What happens on the screen · VO · On screen text**; leave a cell empty when it isn't needed.
 2. **Storyboard.** One still per shot with its timing, words and sound. Approve it before animating.
 3. **Final video.** Higgsfield makes the live-action plates; HyperFrames builds and renders the film.
 

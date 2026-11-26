@@ -1,0 +1,48 @@
+/* Collection Pot design tokens. Source: Brand Guidelines Nov 2026 (pp.46-53).
+   Usage: <link rel="stylesheet" href="../../brand/tokens.css"> */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+@font-face {
+  font-family: "Faro Display Lucky";
+  src: url("fonts/Faro-DisplayLucky.otf") format("opentype");
+  font-display: swap;
+}
+
+:root {
+  /* Primary: Gold is the hero */
+  --cp-gold: #F9B910;    /* Pot of Gold, Pantone 7548 C */
+  --cp-black: #2F2F32;   /* Work Bash Black, Pantone Black 7 C */
+  --cp-white: #FFFCF8;   /* Wedding White */
+
+  /* Secondary: one per occasion; never on Gold */
+  --cp-red-tint: #E87A6B;       --cp-red-dark: #B03D3D;
+  --cp-pink-tint: #F0ABD1;      --cp-pink-dark: #E566AB;
+  --cp-orange-tint: #FC9E59;    --cp-orange-dark: #EB6B17;
+  --cp-green-tint: #B5FA80;     --cp-green-dark: #37B051;
+  --cp-purple-tint: #CFB0F0;    --cp-purple-dark: #8069B0;
+  --cp-blue-tint: #A3DEF5;      --cp-blue-dark: #4278A1;      /* from RGB; PDF hex is a typo */
+  --cp-turquoise-tint: #78DEC2; --cp-turquoise-dark: #21BF8F;
+  --cp-sand-tint: #D9A582;      --cp-sand-dark: #886753;      /* from CMYK; confirm */
+
+  /* Chip */
+  --cp-chip-nose: #FFCC75;
+  --cp-chip-feet-on-gold: #EA9C00;
+  --cp-chip-shadow: #0A0A0A;
+  --cp-chip-highlight: #E3E8E8;
+
+  /* Type */
+  --cp-font-display: "Faro Display Lucky", "Inter", system-ui, sans-serif;
+  --cp-font-body: "Inter", system-ui, sans-serif;
+}
+
+/* Headline: sentence case, tracking -10, leading 100% */
+.cp-headline   { font-family: var(--cp-font-display); letter-spacing: -0.01em; line-height: 1; }
+/* Standfirst: Faro uppercase */
+.cp-standfirst { font-family: var(--cp-font-display); text-transform: uppercase; }
+/* Subheading: Inter SemiBold, tracking -25, leading 110% */
+.cp-subhead    { font-family: var(--cp-font-body); font-weight: 600; letter-spacing: -0.025em; line-height: 1.1; }
+/* Body: Inter Regular, tracking -25, leading 120% */
+.cp-body       { font-family: var(--cp-font-body); font-weight: 400; letter-spacing: -0.025em; line-height: 1.2; }
+/* Button / sticker: Inter SemiBold uppercase, tracking +25 */
+.cp-button     { font-family: var(--cp-font-body); font-weight: 600; text-transform: uppercase; letter-spacing: 0.025em; line-height: 1; }

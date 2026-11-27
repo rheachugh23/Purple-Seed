@@ -36,7 +36,7 @@
 - **Chip's pop-in** has a 3-frame opacity ramp that can read as a ghost on a paused frame. It's invisible at speed.
 
 ## Kept on purpose
-- **No voiceover:** Reels autoplay muted.
+- **The on-screen text still carries the film on its own,** because Reels autoplay muted. The VO (v2) adds to the words rather than reading them out.
 - **The "timeline_track_too_dense" warnings:** kept as noted above.
 
 ## Delivered file (measured)
@@ -44,3 +44,16 @@
 - Mix: −15.7 LUFS integrated, −1.4 dBTP true peak, no clipping; the sound ends cleanly at 29.7 s.
 - The decoded frames at 0, 1.6, 4, 7.6 (blur visible), 11.8, 14.5, 18.6, 22, 25.5 and 29.5 s match the build.
 - Rendered in 21 min 53 s with screenshot capture (software GL). The sound was measured, not heard.
+
+## v2: voiceover (27 Nov 2026)
+- **What changed:** seven VO lines, in ElevenLabs's "Elizabeth" voice (eleven_v4). They were recorded as one take of 427 characters, cut at the pauses and placed on the beats. `assets/audio/vo/VO.md` has the prompt, the cut points and the processing.
+- **Mix:**
+  - The music ducks to 0.5 (0.42 on the end card) under each line and comes back up in the gaps.
+  - The carve's EQ clears 250 Hz–2.5 kHz under the voice.
+  - The card pops are down to 0.2, and the logo chime to 0.25.
+- **What the first VO render taught us:**
+  - The carve's own level lane, stacked on the duck, buried the music 18–25 dB under the voice and kept it down in the gaps.
+  - That lane was removed.
+  - A 6 s probe render (15.5–21.5 s) then measured the voice 11.4 dB over the music, and the gaps back at the levels planned.
+- **Visual check:** "line_unread" now flags three supporting lines (the last message card, the 20 s subline and the end-card subline). Snapshots show each one still on screen late in its frame, so these are the check's short sampling window, not lines that vanish. The VO also says the 20 s line.
+- **Licence:** the take was made on a free ElevenLabs plan, which has no commercial licence. Regenerate it on a paid plan before posting.

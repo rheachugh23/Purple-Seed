@@ -142,7 +142,11 @@ Follow the `hyperframes` skill's contract and work loop, plus the brand rules fr
 
 ## 7. Sound
 
-The person's own track comes first. Otherwise, generate a bed on Higgsfield (ElevenLabs Music is inexpensive; quote it first). Then measure it with `npx hyperframes audio` and `beats`, and land the key cuts on its beats. Add a few exact SFX on visible actions, each peaking one frame after its picture. `references/sound-and-render.md` has the levels and placement.
+The person's own track comes first. Otherwise, generate a bed on Higgsfield (ElevenLabs Music is inexpensive; quote it first). Then measure it with `npx hyperframes audio` and `beats`, and land the key cuts on its beats. Add a few exact SFX on visible actions, each peaking one frame after its picture.
+
+When the script has VO, record the lines in **one** ElevenLabs take (quoted first), cut it at its pauses, and place each line on its beat. Duck and carve the music under the voice, and measure the mix before rendering. A free ElevenLabs plan isn't licensed for commercial posting.
+
+`references/sound-and-render.md` has the levels, placement and the voiceover recipe.
 
 ## 8. Review, render, deliver
 

@@ -7,6 +7,27 @@
 3. **Measure it, since you can't hear it.** Run `npx hyperframes audio <file> --json` for duration, loudness (aim for about −16 to −14 LUFS and a true peak at or below −1 dBTP) and its moments, and `npx hyperframes beats <file> --json` for bpm and beat times. Move the key cut a few frames to land on a beat when it reads better.
 4. **Place it** as one `<audio id="music" class="clip">` on its own track, `data-volume="1"`, with a short `data-fade-out`.
 
+## Voiceover
+
+Only when the script's VO column has lines. Many Reels play muted, so the on-screen text must still carry the film without the voice.
+
+1. **Write the lines into the script first.** They should add to the on-screen words, not read them out. Follow the brand's tone of voice, and give the campaign line to the VO on the end card. Leave silent moments where the picture should breathe.
+2. **Generate on ElevenLabs.** Use the hosted MCP (`https://api.elevenlabs.io/v1/mcp`, OAuth). Higgsfield's `generate_audio` with an ElevenLabs TTS model is the fallback.
+   - **Choose a voice.** Run `creative_list_voices` with `languages` and the brand's accent, then pick a voice that fits the brief and say which one you picked. On a free account, prefer voices with `is_library_voice: false` (the account's own and premade voices).
+   - **Quote and generate one take.** Use `creative_generate_speech` with `estimate_only: true` first. Then generate once with `generations_count: 1`, putting **every line in one prompt**, separated by `[long pause]`. One take keeps the read consistent and costs one generation. Use `eleven_v4` audio tags sparingly (`[warmly]`, `[happy]`, `[mischievously]`).
+   - **Poll, don't resubmit.** Poll `creative_get_flow_run_status` until the take is ready, then download `content_url`. The file host is `elevenlabsusercontent.com`, so it must be allowed on the network.
+3. **Cut the take into lines.**
+   - Level the whole take first: high-pass at 80 Hz, a light compressor, gain to about −16 LUFS, and a limiter at −1.5 dBTP.
+   - Find the pauses with `silencedetect=noise=-40dB:d=0.35` and map the speech chunks to the lines by length and syllables.
+   - Cut each line inside its surrounding silence, with a 15 ms fade-in and a 60 ms fade-out.
+   - Log the voice, model, prompt, cost and cut points in `assets/audio/vo/VO.md`.
+4. **Place one `<audio>` per line,** each on the beat it belongs to, in a `voiceover` group (`data-audio-group="voiceover"` plus `<hf-audio-group id="voiceover"></hf-audio-group>`). Turn down any effects that land under a line.
+5. **Make room in the music.**
+   - Add a `volume` lane on the music: down to about 0.3–0.4 under each line, and back up in gaps longer than about 1.5 s, especially on a big cut.
+   - Then carve it with `node <media-use>/audio/scripts/carve.mjs --comp index.html --bed music --strength 0.5`. Use a lower strength when you have ducked as well.
+   - **Measure before the long render.** `python3 <skill>/scripts/sim_mix.py index.html -o mix.wav` rebuilds the mix offline, and `--only music` or `--only vo-` writes a single stem. Check that the voice sits at least 7 dB above the music in every line (ebur128 on each line's window in both stems), and that the whole mix peaks below −1 dBTP.
+6. **Licence.** ElevenLabs's free plan has no commercial licence. Before a client piece is posted, regenerate the same prompt on a paid plan and say so in the delivery note.
+
 ## Sound effects
 
 Use few, exact effects, each with a cause on screen: a pop for a card or sticker landing, a whoosh for a big cut or a large move, a chime for the logo, a click for a button. The `media-use` skill bundles a small Pixabay-licensed set (`audio/assets/sfx/`, with `manifest.json` and `CREDITS.md`). Copy what you use into `assets/sfx/` along with its credits.

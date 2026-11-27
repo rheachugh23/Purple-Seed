@@ -1,0 +1,64 @@
+{
+  "title": "Last day of term · Collection Pot · storyboard",
+  "subtitle": "9:16 · 30 s · Instagram Reel · real frames from the animated build · VO (ElevenLabs, \"Elizabeth\") + music + SFX",
+  "accent": "#F9B910",
+  "ink": "#2F2F32",
+  "background": "#FBFAF6",
+  "columns": 5,
+  "frames": [
+    {
+      "image": "final-stills/frame-00-at-1.5s.png",
+      "time": "0:00",
+      "speaker": "TEXT",
+      "cue": "Last day of term. 3:31pm."
+    },
+    {
+      "image": "final-stills/frame-01-at-4.6s.png",
+      "time": "0:02",
+      "speaker": "VO",
+      "cue": "From Aisha's mum. Leo's dad. And everyone in between."
+    },
+    {
+      "image": "final-stills/frame-02-at-8.6s.png",
+      "time": "0:05",
+      "speaker": "VO",
+      "cue": "Twenty-eight messages… one very emotional teacher."
+    },
+    {
+      "image": "final-stills/frame-03-at-11.6s.png",
+      "time": "0:10",
+      "speaker": "VO",
+      "cue": "…one very emotional teacher."
+    },
+    {
+      "image": "final-stills/frame-04-at-15.5s.png",
+      "time": "0:12",
+      "speaker": "VO",
+      "cue": "And this year, there's a Gift Card in there too."
+    },
+    {
+      "image": "final-stills/frame-05-at-19s.png",
+      "time": "0:17",
+      "speaker": "VO",
+      "cue": "No chasing anyone for a fiver."
+    },
+    {
+      "image": "final-stills/frame-06-at-23s.png",
+      "time": "0:20",
+      "speaker": "VO",
+      "cue": "And the card? Print it, or we'll pop it in the post."
+    },
+    {
+      "image": "final-stills/frame-07-at-26.4s.png",
+      "time": "0:24",
+      "speaker": "VO",
+      "cue": "Teacher's gift… made easy."
+    },
+    {
+      "image": "final-stills/frame-08-at-29.2s.png",
+      "time": "0:27",
+      "speaker": "VO",
+      "cue": "Collection Pot. Start yours today."
+    }
+  ]
+}

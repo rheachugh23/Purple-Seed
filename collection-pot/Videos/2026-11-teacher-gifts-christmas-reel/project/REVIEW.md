@@ -57,3 +57,12 @@
   - A 6 s probe render (15.5–21.5 s) then measured the voice 11.4 dB over the music, and the gaps back at the levels planned.
 - **Visual check:** "line_unread" now flags three supporting lines (the last message card, the 20 s subline and the end-card subline). Snapshots show each one still on screen late in its frame, so these are the check's short sampling window, not lines that vanish. The VO also says the 20 s line.
 - **Licence:** the take was made on a free ElevenLabs plan, which has no commercial licence. Regenerate it on a paid plan before posting.
+
+### v2: delivered file (measured)
+- `export/teacher-gifts-christmas-reel-vo_1080x1920.mp4`: H.264 1080×1920 at 30 fps, AAC 48 kHz stereo, 30.0 s, 18.8 MB, rendered in 22 min.
+- **Mix:** −14.2 LUFS integrated, −1.6 dBTP true peak. The sound fades to silence by 29.75 s.
+- **Voice lines:** each was matched against its clip and lands on its planned frame (0 ms offset).
+- **The voice over everything else, per line:** 14.7, 9.4, 9.8, 11.4, 8.3, 10.3 and 10.9 dB. The narrowest is "And the card?…" at 20.9 s, where the card lands and the music is at its busiest.
+- **The music comes back up in the gaps:** −15.6 dBFS RMS at the cut to Gold, then −20.5 and −17.2.
+- **Frames:** decoded at 1.6, 4, 7.6, 11.8, 14.5, 18.6, 22, 25.5 and 29.5 s, and they match the build.
+- **The voice was measured, not heard.** Nobody has listened to the take yet, so its delivery, pronunciation of "Aisha" and pacing still need a human ear.

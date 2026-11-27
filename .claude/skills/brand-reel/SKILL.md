@@ -155,8 +155,9 @@ When the script has VO, record the lines in **one** ElevenLabs take (quoted firs
 3. Render with `--quality delivery` in the background; a 30 s film with footage and effects takes a while.
 4. Verify the file with ffprobe and `npx hyperframes audio`.
 5. Make sure `export/.gitignore` ignores the render scratch before you commit.
-6. Deliver the MP4 with a short note: what was made, what each plate cost, what was measured and what wasn't (the sound was measured, not heard), and the weakest shot.
-7. Commit and push per the repo's rules.
+6. If a caption is wanted, write one that **never repeats the on-screen text or VO**. It should add value (a tip, a how-to, a detail the film leaves out) or pull people through the video (a first-line hook, a tease, "sound on" when there's VO). The campaign line can go in a hashtag.
+7. Deliver the MP4 with a short note: what was made, what each plate cost, what was measured and what wasn't (the sound was measured, not heard), and the weakest shot.
+8. Commit and push per the repo's rules.
 
 ## Asset rules, in one place
 

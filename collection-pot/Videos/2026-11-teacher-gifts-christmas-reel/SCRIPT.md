@@ -53,16 +53,24 @@ The prompts are in `higgsfield/PROMPTS.md`.
 
 ## Instagram caption
 
-Updated 27 Nov 2026 for the voiceover cut. It picks up the VO's lines ("everyone chips in", "no chasing anyone for a fiver") and leads with the campaign line.
+Rewritten 27 Nov 2026 after feedback that the last draft repeated the on-screen text. This one uses no line from the screen or the VO. It opens on a hook and asks for sound on, then gives class reps a how-to the film doesn't (including mix and match, from the emailer). It ends on a tag prompt. The campaign line sits in the hashtag only.
 
-> Teacher's gift made easy 🎄
+> Ask a teacher what they kept from last Christmas. It's rarely the candle. 🔊 Sound on.
 >
-> Every family. Every message. One Pot.
+> Class rep this year? Here's the shortcut:
+> 1. Set up the Pot this week and pop the link in the class chat.
+> 2. Parents add a message and their bit, in their own time, from their own phone.
+> 3. Mix and match: put some towards a present you pick, and give the rest as a Gift Card.
+> 4. Set the end date before the last day of term, then put your feet up.
 >
-> And this year, the gift's sorted too. Add a Gift Card to your Pot: pick a shop they love, go multi-store, or mix and match.
+> Tag the class rep who's already dreading the group chat 👇
 >
-> Share one link, everyone chips in, and nobody has to chase anyone for a fiver. Print the card at home, or we'll post it to your door. No trip to the shops (unless you want one).
+> #TeachersGiftMadeEasy #TeacherGifts #ClassGift #ChristmasGifts #EndOfTerm #CollectionPot
+
+**Shorter option, led by intrigue:**
+
+> POV: the bell's gone, the classroom's empty, and your phone won't stop buzzing 📱 Sound on 🔊
 >
-> Beat the class gift chat chaos. Create your Pot now, link in bio.
+> Class reps: get your Pot going before the end-of-term rush, because nobody wants a last-minute panic. Link in bio.
 >
-> #TeacherGifts #ClassGift #ChristmasGifts #EndOfTerm #CollectionPot
+> #TeachersGiftMadeEasy #TeacherGifts #ClassGift #CollectionPot

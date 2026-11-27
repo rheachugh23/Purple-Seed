@@ -31,6 +31,11 @@ Every script or storyline names its territory at the top. When offering options,
 - **Seasonal pieces must feel seasonal,** with props built from the Pot shape (baubles, snow, a snowy hill).
 - **Seasonal Chip:** use the standard renders with at most a seasonal hat added as its own layer (a Santa hat lifted from an official render), or the seasonal versions the client supplied (`collection-pot/brand/mascot-3d/christmas-emailer/`). Don't use other Chip variants for seasonal looks.
 
+### Captions (feedback, Nov 2026)
+- **Never repeat the video.** A caption must not repeat the on-screen text or the VO. It earns its place by adding value (a tip, a how-to, a detail the film leaves out) or by making people watch to the end (a hook, a tease, "sound on" when there's VO).
+- **Open with the hook.** Put it in the first line, the part that shows before "…more". Close on a CTA or a tag/comment prompt.
+- **Keep the campaign line out of the body.** It can go in a hashtag (e.g. #TeachersGiftMadeEasy) instead.
+
 ### Hard rules
 - **No people's faces** in any video. Hands, objects and places only.
 - **Never recreate a brand asset** (logo, Chip, the Pot icon, printed cards, fonts). Always use the files in `collection-pot/brand/` as they are. Chip is never AI-generated, re-drawn or animated by an AI video model.

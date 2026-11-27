@@ -53,12 +53,16 @@ The prompts are in `higgsfield/PROMPTS.md`.
 
 ## Instagram caption
 
+Updated 27 Nov 2026 for the voiceover cut. It picks up the VO's lines ("everyone chips in", "no chasing anyone for a fiver") and leads with the campaign line.
+
 > Teacher's gift made easy 🎄
 >
-> It's that time of year again. Yep. The class gift chat chaos begins. This year: one Pot, one link. Everyone adds money and a message, and now you can add a Gift Card too. Pick a shop they love, go multi-store, or mix and match.
+> Every family. Every message. One Pot.
 >
-> Print the card at home or get it posted to your door. No trip to the shops required (unless you want to!).
+> And this year, the gift's sorted too. Add a Gift Card to your Pot: pick a shop they love, go multi-store, or mix and match.
 >
-> Get ahead and create your Pot now. Link in bio.
+> Share one link, everyone chips in, and nobody has to chase anyone for a fiver. Print the card at home, or we'll post it to your door. No trip to the shops (unless you want one).
 >
-> #TeacherGifts #ChristmasGifts #ClassGift #EndOfTerm #CollectionPot
+> Beat the class gift chat chaos. Create your Pot now, link in bio.
+>
+> #TeacherGifts #ClassGift #ChristmasGifts #EndOfTerm #CollectionPot

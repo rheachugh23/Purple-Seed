@@ -23,9 +23,12 @@ Only when the script's VO column has lines. Many Reels play muted, so the on-scr
    - Log the voice, model, prompt, cost and cut points in `assets/audio/vo/VO.md`.
 4. **Place one `<audio>` per line,** each on the beat it belongs to, in a `voiceover` group (`data-audio-group="voiceover"` plus `<hf-audio-group id="voiceover"></hf-audio-group>`). Turn down any effects that land under a line.
 5. **Make room in the music.**
-   - Add a `volume` lane on the music: down to about 0.3–0.4 under each line, and back up in gaps longer than about 1.5 s, especially on a big cut.
-   - Then carve it with `node <media-use>/audio/scripts/carve.mjs --comp index.html --bed music --strength 0.5`. Use a lower strength when you have ducked as well.
-   - **Measure before the long render.** `python3 <skill>/scripts/sim_mix.py index.html -o mix.wav` rebuilds the mix offline, and `--only music` or `--only vo-` writes a single stem. Check that the voice sits at least 7 dB above the music in every line (ebur128 on each line's window in both stems), and that the whole mix peaks below −1 dBTP.
+   - Add a `volume` lane on the music: down to about 0.5 (−6 dB) under each line, and back up in gaps longer than about 1.5 s, especially on a big cut.
+   - **Then carve it** with `node <media-use>/audio/scripts/carve.mjs --comp index.html --bed music --strength 0.5`. That cuts the voice's frequencies.
+   - **Don't stack two ducks.** The carve also writes a broadband level dip (a `gain` node with an `fx.nN.gain` lane down to −12 dB) that recovers slowly. On top of the volume lane, it buried the music about 20 dB under the voice and kept it down in the gaps. Delete that one lane and keep the carve's EQ lanes and your own volume lane.
+   - **Aim** for the voice about 11–15 dB above the music in each line.
+   - **Measure before the long render.** `python3 <skill>/scripts/sim_mix.py index.html -o mix.wav` rebuilds the mix offline, and `--only music` or `--only vo-` writes a single stem. It ignores effects chains (the carve), so the music comes out a few dB louder than it will in the render. Check that the voice sits at least 7 dB above the music in every line (ebur128 on each line's window in both stems), and that the whole mix peaks below −1 dBTP.
+   - **Measure the render, too.** For each line, project the render's audio onto the voice clip (least squares). The leftover is the music and effects under that line. The renderer also played the mono voice clips about 3 dB hotter than their files, so leave headroom for that.
 6. **Licence.** ElevenLabs's free plan has no commercial licence. Before a client piece is posted, regenerate the same prompt on a paid plan and say so in the delivery note.
 
 ## Sound effects

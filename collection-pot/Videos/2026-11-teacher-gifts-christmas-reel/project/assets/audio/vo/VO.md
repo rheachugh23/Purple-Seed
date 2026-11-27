@@ -31,8 +31,10 @@
 **The mix in `index.html`:**
 - **Voice clips:** grouped as `voiceover`.
 - **Music:**
-  - A volume lane takes it down to 0.38 under each line, and to 0.30 from 20.85 s, then back up in the gaps.
+  - A volume lane takes it down to 0.5 (−6 dB) under each line, and to 0.42 from 20.85 s, then back up in the gaps.
   - On top of that, a carve at strength 0.5 (`media-use` `carve.mjs`) takes −5 to −10 dB from 250 Hz to 2.5 kHz while the voice speaks.
+  - **The carve's level dip was deleted on purpose.** That was the `fx.n5.gain` lane, which went down to −12 dB and recovered slowly. With it, the first VO render had the music 18–25 dB under the voice, and it never came back up in the gaps.
+  - **Re-running `carve.mjs` brings that lane back,** so delete it again afterwards.
 - **Card pops** are down to 0.2, and the **logo chime** to 0.25.
 
 **Licence:** ElevenLabs's free plan doesn't include a commercial licence. Upgrade the account (Starter or above) and regenerate this same prompt before the Reel is posted. It costs about 430 characters, and the timings above still apply if the read comes out the same length.

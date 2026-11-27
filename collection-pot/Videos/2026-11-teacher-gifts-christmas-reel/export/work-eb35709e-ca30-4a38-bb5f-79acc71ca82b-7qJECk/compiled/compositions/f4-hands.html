@@ -1,0 +1,216 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Faro Display Lucky";
+      src: url("assets/fonts/Faro-DisplayLucky.otf") format("opentype");
+    }
+    @font-face {
+      font-family: "Inter";
+      src: url("assets/fonts/Inter-VariableFont_opszwght.ttf") format("truetype");
+      font-weight: 100 900;
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: #2f2f32;
+    }
+    .pot {
+      position: absolute;
+      -webkit-mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+      mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+    }
+    .pot-line {
+      position: absolute;
+      overflow: visible;
+    }
+    .string {
+      position: absolute;
+      width: 3px;
+      background: rgba(47, 47, 50, 0.55);
+    }
+    .cap {
+      position: absolute;
+      border-radius: 6px 6px 3px 3px;
+      background: #c9c3b6;
+    }
+    .h {
+      position: absolute;
+      left: 120px;
+      width: 820px;
+      font-family: "Faro Display Lucky", sans-serif;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      color: #2f2f32;
+      margin: 0;
+      font-weight: 400;
+    }
+    .standfirst {
+      position: absolute;
+      left: 120px;
+      width: 820px;
+      font-family: "Faro Display Lucky", sans-serif;
+      line-height: 1.02;
+      letter-spacing: -0.01em;
+      color: #2f2f32;
+      margin: 0;
+    }
+    .xw {
+      display: inline-block;
+      white-space: nowrap;
+    }
+    .xw > span {
+      display: inline-block;
+      transform-origin: 50% 85%;
+      margin-right: -0.035em;
+    }
+    .dot {
+      display: inline-block;
+      width: 0.23em;
+      height: 0.24em;
+      margin-left: 0.04em;
+      background: currentColor;
+      -webkit-mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+      mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+    }
+    .dot.gold {
+      background: #f9b910;
+    }
+    .sub {
+      position: absolute;
+      left: 120px;
+      width: 780px;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+      color: #2f2f32;
+      margin: 0;
+    }
+    .pill {
+      position: absolute;
+      padding: 22px 38px 20px;
+      border-radius: 999px;
+      background: #2f2f32;
+      color: #fffcf8;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 1;
+      letter-spacing: 0.025em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .chip {
+      position: absolute;
+    }
+    .layer,
+    .bauble {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+    .ln {
+      display: block;
+      overflow: hidden;
+      padding-bottom: 0.14em;
+      margin-bottom: -0.14em;
+    }
+    .lt {
+      display: inline-block;
+    }
+    .row {
+      position: absolute;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .shadow {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(10, 10, 10, 0.16);
+      filter: blur(16px);
+    }
+    .plate {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1080px;
+      height: 1920px;
+      object-fit: cover;
+    }
+    .ft {
+      color: #fffcf8;
+      text-shadow: 0 6px 28px rgba(0, 0, 0, 0.45);
+    }
+    .tag {
+      position: absolute;
+      padding: 18px 34px 16px;
+      border-radius: 999px;
+      background: #f9b910;
+      color: #2f2f32;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 52px;
+      letter-spacing: 0.025em;
+      line-height: 1;
+    }
+    .push {
+      position: absolute;
+      inset: 0;
+      transform-origin: 540px 1035px;
+    }
+    .msg {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      max-width: 800px;
+      padding: 16px 30px 16px 16px;
+      border-radius: 40px;
+      color: #2f2f32;
+      box-shadow: 0 12px 30px rgba(10, 10, 10, 0.22);
+      font-family: "Inter", sans-serif;
+    }
+    .msg .av {
+      flex: none;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: #2f2f32;
+      color: #fffcf8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 28px;
+    }
+    .msg .who {
+      font-weight: 600;
+      font-size: 28px;
+      letter-spacing: -0.01em;
+      margin-bottom: 2px;
+    }
+    .msg .say {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+  </style>
+  <div id="root" data-composition-id="f4" data-width="1080" data-height="1920">
+    <div id="f4-push" class="push" data-layout-ignore>
+      <video id="f4-plate" class="plate clip" data-start="0" data-duration="2.5" data-media-start="9.3" src="assets/plates/plate-2-desk.mp4" muted playsinline data-layout-ignore data-end="2.5" data-has-audio="false"></video>
+    </div>
+    <h1 id="f4-title" class="h ft clip" data-start="0" data-duration="2.5" style="top:300px; font-size:104px"><span class="ln"><span class="lt">Pot delivered.</span></span><span class="ln"><span class="lt">Cue the</span></span><span class="ln"><span class="lt">happy tears.</span></span></h1>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo('#f4-push', { scale: 1.06 }, { scale: 1.08, duration: 2.5, ease: 'none' }, 0);
+    tl.fromTo('#f4-title .lt', { yPercent: 110 }, { yPercent: 0, duration: 0.55, ease: 'expo.out', stagger: 0.1 }, 0.05);
+    window.__timelines["f4"] = tl;
+  </script>
+</template>

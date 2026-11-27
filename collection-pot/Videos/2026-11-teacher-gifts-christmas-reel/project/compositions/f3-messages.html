@@ -13,68 +13,47 @@
       position: absolute;
       inset: 0;
       overflow: hidden;
-      background: #a8774c;
+      background: #2f2f32;
     }
-    .plate {
+    .pot {
       position: absolute;
-      inset: 0;
-      width: 1080px;
-      height: 1920px;
-    }
-    .phone {
-      position: absolute;
-      left: 340px;
-      top: 690px;
-      width: 400px;
-      height: 810px;
-      border: 14px solid #141416;
-      border-radius: 56px;
-      overflow: hidden;
-      background: #141416;
-      transform: rotate(-4deg);
-      box-shadow: 0 18px 40px rgba(10, 10, 10, 0.35);
-    }
-    .phone img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: top;
-      border-radius: 42px;
-      display: block;
-    }
-    .title {
-      position: absolute;
-      left: 120px;
-      top: 310px;
-      width: 780px;
-      font-family: "Faro Display Lucky", sans-serif;
-      font-size: 104px;
-      line-height: 1;
-      letter-spacing: -0.01em;
-      color: #fffcf8;
-      text-shadow: 0 6px 28px rgba(0, 0, 0, 0.35);
-    }
-    .sketch-tag {
-      position: absolute;
-      left: 40px;
-      bottom: 60px;
-      padding: 14px 22px;
-      border-radius: 14px;
-      background: rgba(47, 47, 50, 0.78);
-      color: #fffcf8;
-      font-family: "Inter", sans-serif;
-      font-weight: 600;
-      font-size: 26px;
-      line-height: 1.25;
-    }
-    .dot {
-      display: inline-block;
-      width: 0.23em;
-      height: 0.24em;
-      margin-left: 0.04em;
-      background: #f9b910;
       -webkit-mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
       mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+    }
+    .pot-line {
+      position: absolute;
+      overflow: visible;
+    }
+    .string {
+      position: absolute;
+      width: 3px;
+      background: rgba(47, 47, 50, 0.55);
+    }
+    .cap {
+      position: absolute;
+      border-radius: 6px 6px 3px 3px;
+      background: #c9c3b6;
+    }
+    .h {
+      position: absolute;
+      left: 120px;
+      width: 820px;
+      font-family: "Faro Display Lucky", sans-serif;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      color: #2f2f32;
+      margin: 0;
+      font-weight: 400;
+    }
+    .standfirst {
+      position: absolute;
+      left: 120px;
+      width: 820px;
+      font-family: "Faro Display Lucky", sans-serif;
+      line-height: 1.02;
+      letter-spacing: -0.01em;
+      color: #2f2f32;
+      margin: 0;
     }
     .xw {
       display: inline-block;
@@ -85,24 +64,103 @@
       transform-origin: 50% 85%;
       margin-right: -0.035em;
     }
-    .standfirst {
+    .dot {
+      display: inline-block;
+      width: 0.23em;
+      height: 0.24em;
+      margin-left: 0.04em;
+      background: currentColor;
+      -webkit-mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+      mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+    }
+    .dot.gold {
+      background: #f9b910;
+    }
+    .sub {
       position: absolute;
       left: 120px;
-      top: 300px;
-      width: 820px;
-      font-family: "Faro Display Lucky", sans-serif;
-      font-size: 66px;
-      line-height: 1;
-      letter-spacing: -0.01em;
-      color: #fffcf8;
-      text-shadow: 0 6px 28px rgba(0, 0, 0, 0.35);
+      width: 780px;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+      color: #2f2f32;
       margin: 0;
     }
-    #f3-plate-wrap {
+    .pill {
+      position: absolute;
+      padding: 22px 38px 20px;
+      border-radius: 999px;
+      background: #2f2f32;
+      color: #fffcf8;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 1;
+      letter-spacing: 0.025em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .chip {
+      position: absolute;
+    }
+    .layer,
+    .bauble {
       position: absolute;
       inset: 0;
-      filter: blur(14px);
-      transform: scale(1.04);
+      pointer-events: none;
+    }
+    .ln {
+      display: block;
+      overflow: hidden;
+      padding-bottom: 0.14em;
+      margin-bottom: -0.14em;
+    }
+    .lt {
+      display: inline-block;
+    }
+    .row {
+      position: absolute;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .shadow {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(10, 10, 10, 0.16);
+      filter: blur(16px);
+    }
+    .plate {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1080px;
+      height: 1920px;
+      object-fit: cover;
+    }
+    .ft {
+      color: #fffcf8;
+      text-shadow: 0 6px 28px rgba(0, 0, 0, 0.45);
+    }
+    .tag {
+      position: absolute;
+      padding: 18px 34px 16px;
+      border-radius: 999px;
+      background: #f9b910;
+      color: #2f2f32;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 52px;
+      letter-spacing: 0.025em;
+      line-height: 1;
+    }
+    .push {
+      position: absolute;
+      inset: 0;
+      transform-origin: 540px 1035px;
     }
     .msg {
       position: absolute;
@@ -142,84 +200,45 @@
       letter-spacing: -0.02em;
     }
   </style>
-  <div id="root" data-composition-id="f3" data-width="1080" data-height="1920">
-    <!-- PLACEHOLDER: replaced by Higgsfield plate 2 (teacher's desk from above, hands, phone held still) -->
-    <div id="f3-plate-wrap" class="clip" data-start="0" data-duration="4.5" data-layout-ignore>
-      <svg id="f3-plate" class="plate" viewBox="0 0 1080 1920">
-      <defs>
-        <g id="f3-hand">
-          <rect x="-95" y="110" width="190" height="760" rx="34" fill="#7a5866" />
-          <rect x="-102" y="96" width="204" height="70" rx="24" fill="#8d6977" />
-          <rect x="-78" y="-230" width="36" height="180" rx="18" fill="#e6c9b0" stroke="#a7836b" stroke-width="4" />
-          <rect x="-38" y="-262" width="38" height="205" rx="19" fill="#e6c9b0" stroke="#a7836b" stroke-width="4" />
-          <rect x="4" y="-256" width="38" height="200" rx="19" fill="#e6c9b0" stroke="#a7836b" stroke-width="4" />
-          <rect x="46" y="-212" width="34" height="160" rx="17" fill="#e6c9b0" stroke="#a7836b" stroke-width="4" />
-          <rect x="-82" y="-95" width="164" height="215" rx="72" fill="#e6c9b0" stroke="#a7836b" stroke-width="4" />
-          <rect x="-20" y="-30" width="40" height="140" rx="20" fill="#e6c9b0" stroke="#a7836b" stroke-width="4" transform="translate(-92,30) rotate(48)" />
-        </g>
-      </defs>
-      <rect x="0" y="0" width="1080" height="1920" fill="#a8774c" />
-      <g fill="none" stroke="#93633d" stroke-width="3" opacity="0.55">
-        <path d="M0 140 C300 120 700 170 1080 130" /><path d="M0 420 C360 440 720 390 1080 430" />
-        <path d="M0 760 C300 740 760 790 1080 750" /><path d="M0 1120 C340 1150 700 1090 1080 1130" />
-        <path d="M0 1480 C380 1460 720 1510 1080 1470" /><path d="M0 1800 C300 1820 760 1780 1080 1810" />
-      </g>
-      <!-- school papers under the phone -->
-      <rect x="260" y="660" width="600" height="800" fill="#f4f1ea" transform="rotate(7 560 1060)" />
-      <g stroke="#c9c3b6" stroke-width="5" transform="rotate(7 560 1060)">
-        <line x1="300" y1="760" x2="800" y2="660" /><line x1="300" y1="820" x2="800" y2="820" /><line x1="300" y1="880" x2="760" y2="880" />
-      </g>
-      <!-- mug -->
-      <rect x="200" y="1560" width="70" height="46" rx="20" fill="#fffcf8" stroke="#c9c3b6" stroke-width="4" />
-      <circle cx="140" cy="1584" r="86" fill="#fffcf8" stroke="#c9c3b6" stroke-width="5" />
-      <circle cx="140" cy="1584" r="64" fill="#6b3f22" />
-      <!-- mini tree from above -->
-      <circle cx="960" cy="760" r="100" fill="#4f7d4c" />
-      <circle cx="960" cy="760" r="64" fill="#5e8d5a" />
-      <polygon points="960,726 970,750 996,752 976,768 982,794 960,780 938,794 944,768 924,752 950,750" fill="#d9a73a" />
-      <!-- paper chain links -->
-      <g fill="none" stroke-width="12">
-        <ellipse cx="80" cy="980" rx="46" ry="30" stroke="#c0574a" transform="rotate(30 80 980)" />
-        <ellipse cx="130" cy="1040" rx="46" ry="30" stroke="#5e8d5a" transform="rotate(-20 130 1040)" />
-        <ellipse cx="170" cy="1110" rx="46" ry="30" stroke="#d9a73a" transform="rotate(40 170 1110)" />
-      </g>
-      <!-- red pen -->
-      <g transform="rotate(-28 880 1560)">
-        <rect x="740" y="1548" width="280" height="24" rx="10" fill="#c0392b" />
-        <polygon points="1020,1548 1056,1560 1020,1572" fill="#2f2f32" />
-      </g>
-        <use href="#f3-hand" transform="translate(215 1500) rotate(14)" />
-        <use href="#f3-hand" transform="translate(870 1520) scale(-1 1) rotate(14)" />
-      </svg>
-    <div id="f3-phone" class="phone">
-      <img id="f3-screen" src="assets/screens/teacher-pot-screen.png" alt="" />
+  <div data-hf-id="hf-fbko" id="root" data-composition-id="f3" data-width="1080" data-height="1920">
+    <div data-hf-id="hf-j8u3" id="f3-push" class="push" data-layout-ignore="">
+      <video data-color-grading="{&quot;preset&quot;:null,&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;exposure&quot;:0,&quot;contrast&quot;:0,&quot;highlights&quot;:0,&quot;shadows&quot;:0,&quot;whites&quot;:0,&quot;blacks&quot;:0,&quot;temperature&quot;:0,&quot;tint&quot;:0,&quot;vibrance&quot;:0,&quot;saturation&quot;:0},&quot;details&quot;:{&quot;vignette&quot;:0,&quot;vignetteMidpoint&quot;:0.5,&quot;vignetteRoundness&quot;:0,&quot;vignetteFeather&quot;:0.65,&quot;grain&quot;:0,&quot;grainSize&quot;:0.25,&quot;grainRoughness&quot;:0.5},&quot;effects&quot;:{&quot;blur&quot;:0.85,&quot;pixelate&quot;:0,&quot;chromaBleed&quot;:0,&quot;tapeDamage&quot;:0,&quot;tapeTracking&quot;:0,&quot;tapeNoise&quot;:1,&quot;tapeSpeed&quot;:0.5,&quot;filmArtifacts&quot;:0,&quot;halftone&quot;:0,&quot;halftoneSize&quot;:0,&quot;twoInkPrint&quot;:0,&quot;twoInkPrintSize&quot;:0,&quot;ascii&quot;:0,&quot;asciiSize&quot;:0.06578947368421052,&quot;asciiInvert&quot;:0,&quot;asciiStyle&quot;:0,&quot;asciiColor&quot;:1,&quot;asciiRotation&quot;:0,&quot;dither&quot;:0,&quot;ditherSize&quot;:0,&quot;bloom&quot;:0,&quot;bloomRadius&quot;:8,&quot;monoScreen&quot;:0,&quot;monoScreenSize&quot;:0,&quot;monoScreenAngle&quot;:0,&quot;monoScreenSpread&quot;:0,&quot;monoScreenShape&quot;:0,&quot;monoScreenInvert&quot;:0,&quot;scanlines&quot;:0,&quot;scanlineCount&quot;:0,&quot;scanlineSoftness&quot;:0,&quot;chromaticAberration&quot;:0,&quot;chromaticAngle&quot;:0,&quot;crtCurvature&quot;:0,&quot;digitalGlitch&quot;:0,&quot;digitalGlitchColorSplit&quot;:0,&quot;digitalGlitchLineTear&quot;:0,&quot;digitalGlitchPixelate&quot;:0,&quot;digitalGlitchBlockAmount&quot;:0,&quot;digitalGlitchBlockDisplacement&quot;:0,&quot;digitalGlitchBlockOpacity&quot;:0,&quot;digitalGlitchSpeed&quot;:0,&quot;engraving&quot;:0,&quot;engravingSpacing&quot;:0.4117647058823529,&quot;engravingMinThickness&quot;:0.2,&quot;engravingMaxThickness&quot;:0.4571428571428572,&quot;engravingAngle&quot;:0.25,&quot;engravingContrast&quot;:0.4666666666666667,&quot;engravingSharpness&quot;:0.59,&quot;engravingWave&quot;:0.2,&quot;engravingWaveFrequency&quot;:0.2222222222222222,&quot;crosshatch&quot;:0,&quot;crosshatchSpacing&quot;:0.28,&quot;crosshatchThickness&quot;:0.25,&quot;crosshatchAngle&quot;:0.25,&quot;crosshatchContrast&quot;:0.3333333333333333,&quot;crosshatchEdges&quot;:0.5,&quot;crosshatchLineWeight&quot;:0,&quot;crosshatchWave&quot;:0.33,&quot;crosshatchWaveFrequency&quot;:0.2222222222222222,&quot;kuwahara&quot;:0,&quot;kuwaharaRadius&quot;:0.14285714285714285,&quot;kuwaharaSharpness&quot;:0.3125,&quot;kuwaharaSaturation&quot;:0.5},&quot;lut&quot;:null,&quot;colorSpace&quot;:&quot;rec709&quot;}" data-hf-id="hf-5eeu" id="f3-plate" class="plate clip" data-start="0" data-duration="4.5" data-media-start="4.8" src="assets/plates/plate-2-desk.mp4" muted playsinline data-layout-ignore="" style="--hf-color-grading-blur: 0"></video>
     </div>
+    <h1 data-hf-id="hf-g9cw" id="f3-title" class="h ft clip" data-start="0" data-duration="4.5" style="top:300px; font-size:104px"><span data-hf-id="hf-smev" class="ln"><span data-hf-id="hf-7jyb" class="lt">Every name.</span></span><span data-hf-id="hf-oupj" class="ln"><span data-hf-id="hf-lb4n" class="lt">Every message.</span></span></h1>
+    <div data-hf-id="hf-12e9" id="f3-msg1" class="msg clip" data-start="0" data-duration="4.5" style="left:110px; top:572px; background:#f0abd1">
+      <span data-hf-id="hf-7n2v" class="av">A</span>
+      <div data-hf-id="hf-yeow"><div data-hf-id="hf-49k4" class="who">Aisha</div><div data-hf-id="hf-icje" class="say">Thank you for everything you’ve done for us this year 😊</div></div>
     </div>
-    <h1 id="f3-title" class="title clip" data-start="0" data-duration="4.5">Every name.<br />Every message.</h1>
-    <div id="f3-msg1" class="msg clip" data-start="0" data-duration="4.5" style="left:110px; top:572px; background:#f0abd1; transform:rotate(-2deg)">
-      <span class="av">A</span>
-      <div><div class="who">Aisha</div><div class="say">Thank you for everything you’ve done for us this year 😊</div></div>
+    <div data-hf-id="hf-5niy" id="f3-msg2" class="msg clip" data-start="0" data-duration="4.5" style="left:330px; top:726px; background:#fffcf8">
+      <span data-hf-id="hf-ct28" class="av">L</span>
+      <div data-hf-id="hf-y7yw"><div data-hf-id="hf-4fac" class="who">Leo</div><div data-hf-id="hf-2nqn" class="say">Best teacher ever! 🌟</div></div>
     </div>
-    <div id="f3-msg2" class="msg clip" data-start="0" data-duration="4.5" style="left:330px; top:726px; background:#fffcf8; transform:rotate(2deg)">
-      <span class="av">L</span>
-      <div><div class="who">Leo</div><div class="say">Best teacher ever! 🌟</div></div>
+    <div data-hf-id="hf-xoo4" id="f3-msg3" class="msg clip" data-start="0" data-duration="4.5" style="left:130px; top:846px; background:#78dec2">
+      <span data-hf-id="hf-9mm0" class="av">D</span>
+      <div data-hf-id="hf-x11t"><div data-hf-id="hf-4k5r" class="who">Daniel</div><div data-hf-id="hf-hcfl" class="say">Thank you for being such an inspiring teacher.</div></div>
     </div>
-    <div id="f3-msg3" class="msg clip" data-start="0" data-duration="4.5" style="left:130px; top:846px; background:#78dec2; transform:rotate(-1deg)">
-      <span class="av">D</span>
-      <div><div class="who">Daniel</div><div class="say">Thank you for being such an inspiring teacher.</div></div>
+    <div data-hf-id="hf-44c2" id="f3-msg4" class="msg clip" data-start="0" data-duration="4.5" style="left:400px; top:1002px; background:#d9a582">
+      <span data-hf-id="hf-cer7" class="av">M</span>
+      <div data-hf-id="hf-xfcu"><div data-hf-id="hf-6hg0" class="who">Maya</div><div data-hf-id="hf-wr37" class="say">Merry Christmas! 🎄</div></div>
     </div>
-    <div id="f3-msg4" class="msg clip" data-start="0" data-duration="4.5" style="left:400px; top:1002px; background:#d9a582; transform:rotate(2.5deg)">
-      <span class="av">M</span>
-      <div><div class="who">Maya</div><div class="say">Merry Christmas! 🎄</div></div>
+    <div data-hf-id="hf-oi5w" id="f3-msg5" class="msg clip" data-start="0" data-duration="4.5" style="left:170px; top:1118px; background:#b5fa80">
+      <span data-hf-id="hf-0hkd" class="av">S</span>
+      <div data-hf-id="hf-w8fr"><div data-hf-id="hf-oinu" class="who">Sofia</div><div data-hf-id="hf-s0a1" class="say">Have a lovely break! 💛</div></div>
     </div>
-    <div id="f3-msg5" class="msg clip" data-start="0" data-duration="4.5" style="left:170px; top:1118px; background:#b5fa80; transform:rotate(-1.5deg)">
-      <span class="av">S</span>
-      <div><div class="who">Sofia</div><div class="say">Have a lovely break! 💛</div></div>
-    </div>
-    <div id="f3-tag" class="sketch-tag clip" data-start="0" data-duration="4.5" data-layout-ignore>SKETCH · Higgsfield plate 2, softened<br />Messages: demo Pot + the emailer card</div>
   </div>
   <script>
     window.__timelines = window.__timelines || {};
-    window.__timelines["f3"] = gsap.timeline({ paused: true });
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo('#f3-push', { scale: 1.03 }, { scale: 1.06, duration: 4.5, ease: 'none' }, 0);
+    tl.fromTo('#f3-plate', { '--hf-color-grading-blur': 0 }, { '--hf-color-grading-blur': 0.85, duration: 0.45, ease: 'power2.inOut' }, 0);
+    tl.to('#f3-plate', { '--hf-color-grading-blur': 0, duration: 0.4, ease: 'power2.inOut' }, 4.05);
+    tl.fromTo('#f3-title .lt', { yPercent: 110 }, { yPercent: 0, duration: 0.6, ease: 'expo.out', stagger: 0.12 }, 0.1);
+    tl.fromTo('#f3-msg1', { x: 50, y: 403, scale: 0.25, rotation: 0, opacity: 0 }, { x: 0, y: 0, scale: 1, rotation: -2, opacity: 1, duration: 0.55, ease: 'back.out(1.3)' }, 0.45);
+    tl.fromTo('#f3-msg2', { x: -170, y: 249, scale: 0.25, rotation: 0, opacity: 0 }, { x: 0, y: 0, scale: 1, rotation: 2, opacity: 1, duration: 0.55, ease: 'back.out(1.3)' }, 1.05);
+    tl.fromTo('#f3-msg3', { x: 30, y: 129, scale: 0.25, rotation: 0, opacity: 0 }, { x: 0, y: 0, scale: 1, rotation: -1, opacity: 1, duration: 0.55, ease: 'back.out(1.3)' }, 1.65);
+    tl.fromTo('#f3-msg4', { x: -240, y: -27, scale: 0.25, rotation: 0, opacity: 0 }, { x: 0, y: 0, scale: 1, rotation: 2.5, opacity: 1, duration: 0.55, ease: 'back.out(1.3)' }, 2.25);
+    tl.fromTo('#f3-msg5', { x: -10, y: -143, scale: 0.25, rotation: 0, opacity: 0 }, { x: 0, y: 0, scale: 1, rotation: -1.5, opacity: 1, duration: 0.55, ease: 'back.out(1.3)' }, 2.85);
+    tl.to(['#f3-title', '.msg'], { opacity: 0, y: -30, duration: 0.3, ease: 'power3.in', stagger: 0.03 }, 4.05);
+    window.__timelines["f3"] = tl;
   </script>
 </template>

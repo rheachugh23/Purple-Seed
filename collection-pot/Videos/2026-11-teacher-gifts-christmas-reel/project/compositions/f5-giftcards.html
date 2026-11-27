@@ -105,6 +105,28 @@
     .chip {
       position: absolute;
     }
+    .layer,
+    .bauble {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+    .ln {
+      display: block;
+      overflow: hidden;
+      padding-bottom: 0.14em;
+      margin-bottom: -0.14em;
+    }
+    .lt {
+      display: inline-block;
+    }
+    .row {
+      position: absolute;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+    }
     .shadow {
       position: absolute;
       border-radius: 50%;
@@ -121,33 +143,59 @@
     }
   </style>
   <div id="root" data-composition-id="f5" data-width="1080" data-height="1920">
-    <div id="f5-bg" class="pot" data-layout-ignore style="left:-140px; top:860px; width:1800px; height:1872px; background:#f9b910; transform:rotate(-16deg);"></div>
-    <div id="f5-snow-0" class="pot" data-layout-ignore style="left:940px; top:960px; width:34px; height:35px; background:#fffcf8; transform:rotate(12deg);"></div>
+    <div id="f5-bgwrap" class="layer" data-layout-ignore>
+      <div id="f5-bg" class="pot" data-layout-ignore style="left:-140px; top:860px; width:1800px; height:1872px; background:#f9b910; transform:rotate(-16deg);"></div>
+    </div>
+    <div id="f5-snowwrap" class="layer" data-layout-ignore>
+      <div id="f5-snow-0" class="pot" data-layout-ignore style="left:940px; top:960px; width:34px; height:35px; background:#fffcf8; transform:rotate(12deg);"></div>
 <div id="f5-snow-1" class="pot" data-layout-ignore style="left:1010px; top:1180px; width:22px; height:23px; background:#fffcf8; transform:rotate(-20deg);"></div>
 <div id="f5-snow-2" class="pot" data-layout-ignore style="left:70px; top:1240px; width:28px; height:29px; background:#fffcf8; transform:rotate(25deg);"></div>
 <div id="f5-snow-3" class="pot" data-layout-ignore style="left:980px; top:1420px; width:40px; height:42px; background:#fffcf8; transform:rotate(8deg);"></div>
 <div id="f5-snow-4" class="pot" data-layout-ignore style="left:50px; top:1560px; width:20px; height:21px; background:#fffcf8; transform:rotate(-10deg);"></div>
 <div id="f5-snow-5" class="pot" data-layout-ignore style="left:1000px; top:1700px; width:30px; height:31px; background:#fffcf8; transform:rotate(18deg);"></div>
-    <div id="f5-b1-s" class="string" data-layout-ignore style="left:798px; top:0; height:120px"></div>
+    </div>
+    <div id="f5-b1" class="bauble" data-layout-ignore style="transform-origin:800px 0px">
+<div id="f5-b1-s" class="string" data-layout-ignore style="left:798px; top:0; height:120px"></div>
 <div id="f5-b1-c" class="cap" data-layout-ignore style="left:785px; top:114px; width:29px; height:14px"></div>
 <div id="f5-b1-p" class="pot" data-layout-ignore style="left:757px; top:130px; width:86px; height:89px; background:#b03d3d; transform:rotate(0deg);"></div>
-    <div id="f5-b2-s" class="string" data-layout-ignore style="left:914px; top:0; height:215px"></div>
+</div>
+    <div id="f5-b2" class="bauble" data-layout-ignore style="transform-origin:915px 0px">
+<div id="f5-b2-s" class="string" data-layout-ignore style="left:914px; top:0; height:215px"></div>
 <div id="f5-b2-c" class="cap" data-layout-ignore style="left:903px; top:209px; width:24px; height:11px"></div>
 <div id="f5-b2-p" class="pot" data-layout-ignore style="left:880px; top:223px; width:70px; height:73px; background:#37b051; transform:rotate(0deg);"></div>
-    <div id="f5-b3-s" class="string" data-layout-ignore style="left:1010px; top:0; height:92px"></div>
+</div>
+    <div id="f5-b3" class="bauble" data-layout-ignore style="transform-origin:1012px 0px">
+<div id="f5-b3-s" class="string" data-layout-ignore style="left:1010px; top:0; height:92px"></div>
 <div id="f5-b3-c" class="cap" data-layout-ignore style="left:1002px; top:86px; width:20px; height:9px"></div>
 <div id="f5-b3-p" class="pot" data-layout-ignore style="left:983px; top:99px; width:58px; height:60px; background:#f9b910; transform:rotate(0deg);"></div>
+</div>
     <div id="f5-shadow" class="shadow" data-layout-ignore style="left:330px; top:1610px; width:420px; height:56px"></div>
     <div id="f5-chip" class="chipwrap clip" data-start="0" data-duration="4.5" data-layout-ignore style="left:90px; top:802px; width:900px; height:900px">
       <img id="f5-chip-render" src="assets/chip/121-with-gift.png" alt="Chip holding a gift, in a Santa hat" style="position:absolute; inset:0; width:100%; height:100%" />
       <img id="f5-chip-hat" class="hat" src="assets/chip/santa-hat-from-108.png" alt="" style="left:31.934%; top:6.445%; width:35.742%; height:21.680%" />
     </div>
-    <div id="f5-new" class="pill clip" data-start="0" data-duration="4.5" style="left:120px; top:300px; transform:rotate(-4deg)">New: Gift Cards</div>
-    <h1 id="f5-h" class="h clip" data-start="0" data-duration="4.5" style="top:420px; font-size:116px">Now the gift’s<br />sorted too.</h1>
+    <div id="f5-new" class="pill clip" data-start="0" data-duration="4.5" style="left:120px; top:300px">New: Gift Cards</div>
+    <h1 id="f5-h" class="h clip" data-start="0" data-duration="4.5" style="top:420px; font-size:116px"><span class="ln"><span class="lt">Now the gift’s</span></span><span class="ln"><span class="lt">sorted too.</span></span></h1>
     <p id="f5-sub" class="sub clip" data-start="0" data-duration="4.5" style="top:676px">A shop they love, or a multi-store card.</p>
   </div>
   <script>
     window.__timelines = window.__timelines || {};
-    window.__timelines["f5"] = gsap.timeline({ paused: true });
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo('#f5-bgwrap', { y: 320 }, { y: 0, duration: 0.7, ease: 'expo.out' }, 0);
+    tl.fromTo('#f5-snowwrap', { y: -35 }, { y: 70, duration: 4.5, ease: 'none' }, 0);
+    tl.fromTo('#f5-b1', { y: -440, rotation: 10 }, { y: 0, duration: 0.7, ease: 'power3.out' }, 0.10);
+    tl.to('#f5-b1', { rotation: 0, duration: 1.8, ease: 'elastic.out(1, 0.35)' }, 0.30);
+    tl.fromTo('#f5-b2', { y: -440, rotation: 10 }, { y: 0, duration: 0.7, ease: 'power3.out' }, 0.18);
+    tl.to('#f5-b2', { rotation: 0, duration: 1.8, ease: 'elastic.out(1, 0.35)' }, 0.38);
+    tl.fromTo('#f5-b3', { y: -440, rotation: 10 }, { y: 0, duration: 0.7, ease: 'power3.out' }, 0.26);
+    tl.to('#f5-b3', { rotation: 0, duration: 1.8, ease: 'elastic.out(1, 0.35)' }, 0.46);
+    tl.fromTo('#f5-h .lt', { yPercent: 110 }, { yPercent: 0, duration: 0.6, ease: 'expo.out', stagger: 0.12 }, 0.05);
+    tl.fromTo('#f5-new', { scale: 0, rotation: -16 }, { scale: 1, rotation: -4, duration: 0.45, ease: 'back.out(2)' }, 0.9);
+    tl.fromTo('#f5-sub', { opacity: 0, filter: 'blur(8px)' }, { opacity: 1, filter: 'blur(0px)', duration: 0.3, ease: 'power2.out' }, 1.1);
+    tl.fromTo('#f5-shadow', { opacity: 0 }, { opacity: 1, duration: 0.4 }, 0.35);
+    tl.fromTo('#f5-chip', { y: 160, scale: 0.8, transformOrigin: '50% 95%' }, { y: 0, scale: 1, duration: 0.6, ease: 'back.out(1.6)' }, 0.25);
+    tl.fromTo('#f5-chip', { opacity: 0 }, { opacity: 1, duration: 0.1, ease: 'none' }, 0.25);
+    tl.to('#f5-chip', { rotation: 1.5, duration: 1.2, ease: 'sine.inOut', yoyo: true, repeat: 2 }, 0.9);
+    window.__timelines["f5"] = tl;
   </script>
 </template>

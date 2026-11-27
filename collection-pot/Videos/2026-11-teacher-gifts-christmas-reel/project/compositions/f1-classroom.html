@@ -13,39 +13,140 @@
       position: absolute;
       inset: 0;
       overflow: hidden;
-      background: #7c6a58;
+      background: #2f2f32;
     }
-    #f1-plate {
+    .pot {
       position: absolute;
-      inset: 0;
-      width: 1080px;
-      height: 1920px;
+      -webkit-mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
+      mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
     }
-    #f1-title {
+    .pot-line {
+      position: absolute;
+      overflow: visible;
+    }
+    .string {
+      position: absolute;
+      width: 3px;
+      background: rgba(47, 47, 50, 0.55);
+    }
+    .cap {
+      position: absolute;
+      border-radius: 6px 6px 3px 3px;
+      background: #c9c3b6;
+    }
+    .h {
       position: absolute;
       left: 120px;
-      top: 320px;
-      width: 760px;
+      width: 820px;
       font-family: "Faro Display Lucky", sans-serif;
-      font-size: 128px;
       line-height: 1;
       letter-spacing: -0.01em;
-      color: #fffcf8;
-      text-shadow: 0 6px 28px rgba(0, 0, 0, 0.35);
+      color: #2f2f32;
+      margin: 0;
+      font-weight: 400;
     }
-    #f1-title .dot {
+    .standfirst {
+      position: absolute;
+      left: 120px;
+      width: 820px;
+      font-family: "Faro Display Lucky", sans-serif;
+      line-height: 1.02;
+      letter-spacing: -0.01em;
+      color: #2f2f32;
+      margin: 0;
+    }
+    .xw {
+      display: inline-block;
+      white-space: nowrap;
+    }
+    .xw > span {
+      display: inline-block;
+      transform-origin: 50% 85%;
+      margin-right: -0.035em;
+    }
+    .dot {
       display: inline-block;
       width: 0.23em;
       height: 0.24em;
       margin-left: 0.04em;
-      background: #f9b910;
+      background: currentColor;
       -webkit-mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
       mask: url("assets/pot/pot.svg") center / 100% 100% no-repeat;
     }
-    #f1-time {
+    .dot.gold {
+      background: #f9b910;
+    }
+    .sub {
       position: absolute;
       left: 120px;
-      top: 600px;
+      width: 780px;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+      color: #2f2f32;
+      margin: 0;
+    }
+    .pill {
+      position: absolute;
+      padding: 22px 38px 20px;
+      border-radius: 999px;
+      background: #2f2f32;
+      color: #fffcf8;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 1;
+      letter-spacing: 0.025em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .chip {
+      position: absolute;
+    }
+    .layer,
+    .bauble {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+    .ln {
+      display: block;
+      overflow: hidden;
+      padding-bottom: 0.14em;
+      margin-bottom: -0.14em;
+    }
+    .lt {
+      display: inline-block;
+    }
+    .row {
+      position: absolute;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .shadow {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(10, 10, 10, 0.16);
+      filter: blur(16px);
+    }
+    .plate {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1080px;
+      height: 1920px;
+      object-fit: cover;
+    }
+    .ft {
+      color: #fffcf8;
+      text-shadow: 0 6px 28px rgba(0, 0, 0, 0.45);
+    }
+    .tag {
+      position: absolute;
       padding: 18px 34px 16px;
       border-radius: 999px;
       background: #f9b910;
@@ -56,99 +157,16 @@
       letter-spacing: 0.025em;
       line-height: 1;
     }
-    .sketch-tag {
-      position: absolute;
-      left: 40px;
-      bottom: 60px;
-      padding: 14px 22px;
-      border-radius: 14px;
-      background: rgba(47, 47, 50, 0.78);
-      color: #fffcf8;
-      font-family: "Inter", sans-serif;
-      font-weight: 600;
-      font-size: 26px;
-      line-height: 1.25;
-    }
   </style>
   <div id="root" data-composition-id="f1" data-width="1080" data-height="1920">
-    <!-- PLACEHOLDER: replaced by Higgsfield plate 1 (empty classroom push-in) -->
-    <svg id="f1-plate" class="clip" data-start="0" data-duration="2.5" viewBox="0 0 1080 1920" data-layout-ignore>
-      <rect x="0" y="0" width="1080" height="1160" fill="#7c6a58" />
-      <rect x="0" y="0" width="1080" height="120" fill="#6a5a4b" />
-      <!-- window with low winter sun -->
-      <rect x="50" y="660" width="340" height="380" rx="8" fill="#ffd796" />
-      <rect x="50" y="660" width="340" height="380" rx="8" fill="none" stroke="#7d5f43" stroke-width="14" />
-      <line x1="220" y1="660" x2="220" y2="1040" stroke="#7d5f43" stroke-width="10" />
-      <line x1="50" y1="850" x2="390" y2="850" stroke="#7d5f43" stroke-width="10" />
-      <circle cx="130" cy="960" r="50" fill="#fff1c9" />
-      <!-- sun beams -->
-      <polygon points="60,900 390,760 1080,1600 1080,1920 420,1920" fill="#ffd796" opacity="0.22" />
-      <!-- whiteboard -->
-      <rect x="520" y="720" width="480" height="280" rx="6" fill="#f7f5f0" stroke="#9aa0a6" stroke-width="10" />
-      <path d="M570 800 q40 -30 80 0 t80 0 t80 0" fill="none" stroke="#c0574a" stroke-width="6" />
-      <path d="M570 870 q30 -20 60 0 t60 0 t60 0 t60 0" fill="none" stroke="#5e8d5a" stroke-width="5" />
-      <!-- paper chains -->
-      <path d="M0 150 Q270 260 540 170 T1080 160" fill="none" stroke="#c0574a" stroke-width="16" stroke-dasharray="26 14" />
-      <path d="M0 210 Q300 300 600 220 T1080 230" fill="none" stroke="#5e8d5a" stroke-width="16" stroke-dasharray="26 14" />
-      <path d="M0 260 Q360 340 700 270 T1080 290" fill="none" stroke="#d9a73a" stroke-width="14" stroke-dasharray="22 12" />
-      <!-- floor -->
-      <rect x="0" y="1160" width="1080" height="760" fill="#b88a5e" />
-      <g stroke="#9c7149" stroke-width="4" opacity="0.7">
-        <line x1="540" y1="1160" x2="-400" y2="1920" />
-        <line x1="540" y1="1160" x2="0" y2="1920" />
-        <line x1="540" y1="1160" x2="300" y2="1920" />
-        <line x1="540" y1="1160" x2="540" y2="1920" />
-        <line x1="540" y1="1160" x2="780" y2="1920" />
-        <line x1="540" y1="1160" x2="1080" y2="1920" />
-        <line x1="540" y1="1160" x2="1480" y2="1920" />
-      </g>
-      <!-- teacher's desk -->
-      <polygon points="300,1080 780,1080 830,1140 250,1140" fill="#a7764a" />
-      <rect x="262" y="1140" width="556" height="170" fill="#8e6240" />
-      <polygon points="330,1080 360,980 390,1080" fill="#5e8d5a" />
-      <rect x="352" y="1080" width="16" height="12" fill="#6b4b2e" />
-      <!-- the phone on the desk, lit -->
-      <ellipse cx="610" cy="1106" rx="70" ry="22" fill="#ffe9a8" opacity="0.55" />
-      <rect x="575" y="1094" width="70" height="24" rx="6" fill="#1d1d20" />
-      <rect x="581" y="1098" width="58" height="16" rx="3" fill="#ffe9a8" />
-      <!-- student desks with chairs up, row 1 -->
-      <g fill="#c49b70" stroke="#6b4b2e" stroke-width="5">
-        <polygon points="40,1390 400,1390 430,1440 10,1440" />
-        <polygon points="640,1390 1000,1390 1040,1440 610,1440" />
-      </g>
-      <g stroke="#3d3d42" stroke-width="10" stroke-linecap="round">
-        <rect x="120" y="1330" width="200" height="40" fill="#5b6f8a" />
-        <line x1="135" y1="1330" x2="125" y2="1230" />
-        <line x1="305" y1="1330" x2="315" y2="1230" />
-        <rect x="720" y="1330" width="200" height="40" fill="#5b6f8a" />
-        <line x1="735" y1="1330" x2="725" y2="1230" />
-        <line x1="905" y1="1330" x2="915" y2="1230" />
-      </g>
-      <!-- row 2, closer -->
-      <g fill="#c49b70" stroke="#6b4b2e" stroke-width="6">
-        <polygon points="-60,1690 460,1690 510,1770 -110,1770" />
-        <polygon points="620,1690 1140,1690 1190,1770 570,1770" />
-      </g>
-      <g stroke="#3d3d42" stroke-width="14" stroke-linecap="round">
-        <rect x="60" y="1610" width="290" height="56" fill="#5b6f8a" />
-        <line x1="80" y1="1610" x2="66" y2="1470" />
-        <line x1="330" y1="1610" x2="344" y2="1470" />
-        <rect x="740" y="1610" width="290" height="56" fill="#5b6f8a" />
-        <line x1="760" y1="1610" x2="746" y2="1470" />
-        <line x1="1010" y1="1610" x2="1024" y2="1470" />
-      </g>
-      <!-- glitter on the floor -->
-      <g fill="#fff1c9">
-        <circle cx="470" cy="1560" r="5" /><circle cx="520" cy="1600" r="4" /><circle cx="560" cy="1540" r="6" />
-        <circle cx="600" cy="1830" r="5" /><circle cx="430" cy="1860" r="4" /><circle cx="650" cy="1500" r="4" />
-      </g>
-    </svg>
-    <h1 id="f1-title" class="clip" data-start="0" data-duration="2.5">Last day<br />of term.</h1>
-    <div id="f1-time" class="clip" data-start="0" data-duration="2.5">3:31PM</div>
-    <div id="f1-tag" class="sketch-tag clip" data-start="0" data-duration="2.5" data-layout-ignore>SKETCH · Higgsfield plate 1<br />Empty classroom, slow push to the desk</div>
+    <video id="f1-plate" class="plate clip" data-start="0" data-duration="2.5" data-media-start="2.4" src="assets/plates/plate-1-classroom.mp4" muted playsinline data-layout-ignore></video>
+    <h1 id="f1-title" class="h ft clip" data-start="0" data-duration="2.5" style="top:320px; font-size:128px"><span class="ln"><span class="lt">Last day</span></span><span class="ln"><span class="lt">of term.</span></span></h1>
+    <div id="f1-time" class="tag clip" data-start="0" data-duration="2.5" style="left:120px; top:600px">3:31PM</div>
   </div>
   <script>
     window.__timelines = window.__timelines || {};
-    window.__timelines["f1"] = gsap.timeline({ paused: true });
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo('#f1-time', { scale: 0, rotation: -10 }, { scale: 1, rotation: -3, duration: 0.45, ease: 'back.out(2)' }, 0.45);
+    window.__timelines["f1"] = tl;
   </script>
 </template>

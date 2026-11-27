@@ -1,0 +1,19 @@
+{
+  "title": "Last day of term · Collection Pot · storyboard",
+  "subtitle": "9:16 · 30 s · Instagram Reel · real frames from the animated build · no VO (on-screen text carries it), music + SFX",
+  "accent": "#F9B910",
+  "ink": "#2F2F32",
+  "background": "#FBFAF6",
+  "columns": 5,
+  "frames": [
+    { "image": "final-stills/frame-00-at-1.5s.png",  "time": "0:00", "speaker": "TEXT", "cue": "Last day of term. 3:31pm." },
+    { "image": "final-stills/frame-01-at-4.6s.png",  "time": "0:02", "speaker": "TEXT", "cue": "From the whole class." },
+    { "image": "final-stills/frame-02-at-8.6s.png",  "time": "0:05", "speaker": "TEXT", "cue": "Every name. Every message." },
+    { "image": "final-stills/frame-03-at-11.6s.png", "time": "0:10", "speaker": "TEXT", "cue": "Pot delivered. Cue the happy tears." },
+    { "image": "final-stills/frame-04-at-15.5s.png", "time": "0:12", "speaker": "TEXT", "cue": "New: Gift Cards. Now the gift's sorted too." },
+    { "image": "final-stills/frame-05-at-19s.png",   "time": "0:17", "speaker": "TEXT", "cue": "One Pot. One link. Everyone chips in." },
+    { "image": "final-stills/frame-06-at-23s.png",   "time": "0:20", "speaker": "TEXT", "cue": "No trip to the shops. Print it at home, or we'll post it to your door." },
+    { "image": "final-stills/frame-07-at-26.4s.png", "time": "0:24", "speaker": "TEXT", "cue": "Teacher's gift made easy. A card and gift in one, from everyone." },
+    { "image": "final-stills/frame-08-at-29.2s.png", "time": "0:27", "speaker": "TEXT", "cue": "Collection Pot · CREATE A POT" }
+  ]
+}

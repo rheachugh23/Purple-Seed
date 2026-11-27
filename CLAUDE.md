@@ -2,6 +2,8 @@
 
 Video and marketing work for brands. Each brand has its own workspace folder (e.g. `collection-pot/`).
 
+For any brand video (AI clips + brand graphic frames: brief → brand study → 4-column script → one-page storyboard image → Higgsfield plates → HyperFrames film), use the `brand-reel` skill in `.claude/skills/brand-reel/`. The brand-specific rules below sit on top of it.
+
 ## Collection Pot
 
 Read `collection-pot/brand/BRAND.md` before making anything. Videos live in `collection-pot/Videos/<YYYY-MM-slug>/`, one folder per video (see `collection-pot/Videos/README.md`).

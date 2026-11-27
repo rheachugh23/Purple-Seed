@@ -1,6 +1,6 @@
 ---
 name: brand-reel
-description: Make short branded social videos (Instagram Reels, TikToks, Shorts, paid social, story ads) that combine AI-generated live-action clips from Higgsfield with on-brand motion-graphic frames built in HyperFrames. Covers the whole pipeline. It runs from a brief or campaign (emailer, landing page, idea) through a thorough brand-guideline study, storylines and a 4-column script (Timing · What happens on the screen · VO · On screen text), and a one-page storyboard image the person approves, to credit-efficient Higgsfield plates and a composited, animated, scored and rendered film. Works for any brand. Use it whenever someone wants a video, reel, ad or social post for a brand or campaign, asks for a script or storyboard for a brand video, wants to turn an emailer or campaign into a video, or mentions Higgsfield together with HyperFrames, even if they don't name this skill.
+description: Make short branded social videos (Instagram Reels, TikToks, Shorts, paid social, story ads) that combine AI-generated live-action clips from Higgsfield with on-brand motion-graphic frames built in HyperFrames. Covers the whole pipeline. It runs from a brief or campaign (emailer, landing page, idea) through a thorough brand-guideline study, storylines and a 4-column script (Timing · What happens on the screen · VO · On screen text), and a one-page storyboard image the person approves, to credit-efficient Higgsfield plates and a composited, animated, scored and rendered film. Works for any brand. Use it whenever someone wants a video, reel, ad or social post for a brand or campaign, asks for a script or storyboard for a brand video, wants to turn an emailer or campaign into a video, or mentions Higgsfield together with HyperFrames
 ---
 
 # Brand reel: AI clips + brand graphic frames
@@ -8,7 +8,7 @@ description: Make short branded social videos (Instagram Reels, TikToks, Shorts,
 A brand reel has two layers, and keeping them apart is what makes it work:
 
 1. **Live-action plates** generated on Higgsfield: rooms, desks, hands, objects, places, light. They carry the feeling and the real-world moment.
-2. **The brand layer** built in HyperFrames: type, mascot, logo, product screens, printed items and the brand's own shapes. It carries the message, and **every element comes from the brand's own files.**
+2. **The brand layer** built in HyperFrames: type, mascot, logo, product screens, printed items and the brand's own shapes. It carries the message, and **every brand asset comes from the brand's own files.**
 
 AI never makes a brand asset. A mascot, logo, icon, font, product UI or packaging that the brand owns is used from its original file, every time. The AI only makes what the brand has no file for: the world around it.
 

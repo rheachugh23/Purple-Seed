@@ -38,3 +38,9 @@
 ## Kept on purpose
 - **No voiceover:** Reels autoplay muted.
 - **The "timeline_track_too_dense" warnings:** kept as noted above.
+
+## Delivered file (measured)
+- `export/teacher-gifts-christmas-reel_1080x1920.mp4`: H.264 1080×1920 at 30 fps, AAC 48 kHz stereo, 30.0 s, 18.8 MB.
+- Mix: −15.7 LUFS integrated, −1.4 dBTP true peak, no clipping; the sound ends cleanly at 29.7 s.
+- The decoded frames at 0, 1.6, 4, 7.6 (blur visible), 11.8, 14.5, 18.6, 22, 25.5 and 29.5 s match the build.
+- Rendered in 21 min 53 s with screenshot capture (software GL). The sound was measured, not heard.
